@@ -101,6 +101,7 @@ p {
   background-color: #6598C7;
   min-height: 10vh;
   width: 100%;
+  height: 100vh;
 }
 
 .hero__title {
@@ -132,6 +133,10 @@ p {
   display: flex;
 }
 
+.services {
+  height: 100vh;
+}
+
 .services .grid {
   min-width: 100%;
   display: -webkit-box;
@@ -161,6 +166,57 @@ p {
           align-items: center;
 }
 
+.services .scene {
+  height: 110px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  width: 100%;
+}
+
+.services .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.services .card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.services .card__face--front {
+  background: red;
+}
+
+.services .card__face--back {
+  background: blue;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.services .is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @media screen and (min-width: 600px) {
   .grid {
     -webkit-box-orient: vertical;
@@ -181,6 +237,16 @@ p {
   }
   .square {
     width: 20%;
+    height: 12vh;
+  }
+  .scene {
+    width: 20% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .square {
+    min-height: 23vh;
   }
 }
 
@@ -313,7 +379,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 0;
+  padding: 10px 5px;
   width: 50%;
   max-width: 250px;
   font-size: 14px;
@@ -323,6 +389,12 @@ p {
   .about .numbers {
     width: 20%;
     min-width: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .numbers {
+    padding: 25px 10px;
   }
 }
 
@@ -373,6 +445,18 @@ p {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .about .numbers_number {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .numbers_number {
+    font-size: 2.9rem;
+  }
+}
+
 .about .numbers_label {
   font-size: 0.9375rem;
   font-weight: 800;
@@ -383,6 +467,18 @@ p {
 @media screen and (min-width: 600px) {
   .about .numbers_label {
     font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about .numbers_label {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .numbers_label {
+    font-size: 1.25em;
   }
 }
 
