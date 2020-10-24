@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap')
+
+// ************** VARIABLES ******************
+// COLORS
+$blue: #6598C7
+$darkblue: #003152
+$grey:  #D2CED1
+$green: #89B700
+$white: #ffffff
+$light: #FAFAFA
+$black: #000000
+
+// BACKGROUNDS
+.white
+    background: $white
+.light
+    background: $light
+.blue
+    background-image: url('img/bg_blue.jpg')
+.grey
+    background-image: url('img/bg_grey.jpg')
+.hypo_bg
+    background-image: url('img/hypot.jpg')
+.poj_bg
+    background-image: url('img/pojist.jpg')
+.inv_bg
+    background-image: url('img/invest.jpg')
+
+// ************** GENERAL STYLING *************
+*, *::before, *::after
+    box-sizing: border-box
+    font-size: 16px
+body
+    margin: 0
+    padding: 0
+    // overflow: hidden
+    color: $black
+    font-family: Barlow
+img
+    max-width: 100%
+h1
+    margin: 0
+    padding: 0
+    font-size: 3rem
+    padding-bottom: 200px
+h2
+    margin: 0
+    padding: 0
+    font-family: Frank Ruhl Libre
+    color: $darkblue
+    font-weight: 700
+    font-size: 1rem
+    text-align: right
+    letter-spacing: .3px
+    white-space: nowrap
+    transform: rotate(-90deg)
+    margin-top: 2.5rem 
+    margin-left: 1rem
+h3
+    margin: 0
+    padding: 0
+    font-family: Barlow
+    font-weight: 600
+    font-size: 1.25rem
+    letter-spacing: .35px
+p
+    margin: 0
+    padding: 0
+    font-family: Barlow
+    font-weight: 300
+    letter-spacing: .28px
+.green_button
+    color: $white
+    background: $green
+    border: 0px
+    padding: 0.9rem 0
+    font-weight: 600
+    font-size: 1.125rem
+    letter-spacing: 0.45px
+    border-radius: 7px
+    width: 200px
+    margin-left: calc( 50% - 100px )
+
+// ************** HERO *************
+.hero
+    background-color: $blue
+    min-height: 10vh
+    width: 100%
+.hero__title
+    text-align: center
+    padding-top: 5em
+// *************** GENERAL GRID *************
+.container
+    width: 100%
+    max-width: 1440px
+    display: flex
+    margin: 0 auto
+.fringe
+    width: 8.5%
+    background: $white
+.main
+    min-width: 83%
+.row
+    display: flex
+
+// *************** SERVICES *************
+.services
+    .grid
+        min-width: 100%
+        display: flex
+        padding-bottom: 100px
+    .grid__column
+        width: 50%
+    .mobile_hidden
+        display: hidden
+    .square
+        // border: 2px solid red
+        height: 110px
+        background-size: cover
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+@media screen and ( min-width: 600px)
+    .grid
+        flex-direction: column
+    .mobile_hidden
+        display: flex
+    .grid__column
+        display: flex
+        width: 100% !important
+    .square
+        width: 20%
+
+// *************** AKTUALITY *************
+.news
+    width: 100%
+    padding-bottom: 100px
+    .main
+        width: 83%
+    .fb_post
+        background: $blue
+        height: 300px
+        border: 1px solid black
+    h1
+        padding: 0
+    .green_button
+        margin-top: 3rem
+
+// *************** ABOUT *************
+.about
+    width: 100%
+    .main
+        width: 83%
+        padding-bottom: 100px
+    // .about__container
+    //     width: 100%
+    .about__paragraph
+        width: 98%
+        margin: 0 auto
+        padding-bottom: 2rem
+    .dsk_show
+        display: none
+    // IMAGES
+    .portrait
+        max-width: 313px
+        margin: 0 auto
+        padding-bottom: 2rem
+    .diplom
+        max-width: 313px
+        margin: 0 auto
+    .diplom + .diplom
+        padding-bottom: 2rem
+    // tablet+desktop
+    @media screen and ( min-width: 600px)
+        .about__row
+            display: flex
+            flex-direction: row-reverse
+            justify-content: space-between
+            align-items: center
+            .portrait
+                width: 43%
+                margin: 0
+            .about__text_one
+                width: 53%
+    @media screen and ( min-width: 1200px)
+        .about__row
+            align-items: flex-start
+        .dsk_hide
+            display: none
+        .dsk_show
+            display: block
+            width: 30%
+            padding-top: 60px
+        .portrait
+            width: 30%
+        .about__text_one
+            padding-top: 60px
+            width: 30% !important
+        
+
+    // NUMBERS
+    .numbers_container
+        max-width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 3rem
+    .numbers
+        display: flex
+        flex-direction: column
+        align-items: center
+        // background-color: pink
+        padding: 8px 0
+        width: 50%
+        max-width: 250px
+        font-size: 14px
+        @media screen and ( min-width: 600px)
+            width: 20%
+            min-width: 100px
+    // REORDER items
+    @media screen and ( min-width: 600px)
+        .numbers:nth-of-type(1)
+            order: 1
+        .numbers:nth-of-type(2)
+            order: 2
+        .numbers:nth-of-type(3)
+            order: 4
+        .numbers:nth-of-type(4)
+            order: 3
+        .numbers:nth-of-type(5)
+            order: 5
+    .numbers_line
+        width: 29px
+        height: 11px
+        margin-bottom: 0.8rem
+        // background: red
+    .numbers_number
+        font-size: 2.8125em
+        font-weight: 800
+        letter-spacing: 1.55px
+        line-height: 2.5rem
+        @media screen and ( min-width: 600px)
+            font-size: 2rem
+    .numbers_label
+        font-size: 0.9375rem
+        font-weight: 800
+        letter-spacing: .52px
+        text-align: center
+        @media screen and ( min-width: 600px)
+            font-size: 0.75em
+    .white_txt
+        color: $white
+    
+// *************** REFERENCE *************
+.reference
+    width: 100%
+    margin-bottom: 100px
+    text-align: center
+    .main
+        width: 83%
+    .reference_box
+        width: 100%
+        border: 1px solid $black
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 10%
+        font-size: 16px
+    .reference_img
+        width: 3.125em
+        height: 3.125em
+        border-radius: 50px
+    .reference_paragraph
+        padding: 1.75rem 0
+        font-size: 0.875em
+    .reference_name
+        .ref_name
+            font-family: Frank Ruhl Libre
+            font-weight: 700
+            font-size: 1em
+            color: $darkblue
+        .ref_produkt
+            font-weight: 200
+            font-style: italic
+            font-size: 0.75em
+    .reference_arrows
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 5px
+    .arrow_div
+        width: 40px
+        height: 40px
+        background-color: $blue
+        padding: 12px
+        &:hover
+            background: $grey
+
+// *************** CONTACT *************
+.contact
+    width: 100%
+    margin-top: 100px
+    .main
+        width: 83%
+        @media screen and ( min-width: 1200px )
+            display: flex
+            flex-direction: row-reverse
+            
+    .map_contactdata
+        @media screen and ( min-width: 1200px )
+            width: 50%
+            display: flex
+            flex-direction: column-reverse
+    .contact_container
+        background: $light
+        padding: 10%
+        @media screen and ( min-width: 1200px )
+            width: 50%
+            padding: 5%
+        input, textarea
+            width: 100%
+            border: 0
+            border-bottom: 1px solid
+            background: $light
+            padding: 3px 0
+            margin-bottom: 1.25rem
+            font-family: Barlow
+            font-size: 1rem
+            font-weight: 300
+        label
+            font-size: 0.75rem
+            font-weight: 500
+            letter-spacing: .21px
+            color: $darkblue
+        .submit
+            color: $white
+            background: $green
+            border: 0px
+            padding: 0.9rem 0
+            font-weight: 600
+            font-size: 1.125rem
+            letter-spacing: 0.45px
+            border-radius: 7px
+            width: 200px
+            margin-left: calc( 50% - 100px )
+    .contact_data
+        background: $light
+        padding: 10%
+        @media screen and ( min-width: 600px )
+            display: flex
+            justify-content: space-between
+    // GOOGLE MAP
+    iframe
+        height: 240px
+        width: 100%
+        @media screen and ( min-width: 600px )
+            height: 500px
+        @media screen and ( min-width: 1200px )
+            height: 440px
+            
+    .adress_sm
+        display: flex   
+        justify-content: space-between
+        @media screen and ( min-width: 1200px )
+            flex-direction: column
+    .socialmedia
+        margin-left: 20px
+        width: 55px
+        display: flex
+        justify-content: space-between
+        @media screen and ( min-width: 1200px )
+            margin-left: 0
+            margin-top: 20px
+    .sm_img
+        width: 24px
+        height: 24px 
+    .email_box
+        padding-top: 1.75rem
+        @media screen and ( min-width: 600px )
+            padding-top: 0
+    .email_item
+        display: flex  
+    .icon_phone
+        width: 14px
+        height: 14px
+        margin-top: 3px
+        margin-right: 10px
+
+
+// *************** FOOTER *************
+.footer
+    width: 100%
+    margin-top: 100px
+    .container
+        width: 100%
+        background: $blue
+    .main
+        width: 83%
+        background: $blue
+    .fringe
+        background: $blue
+    .footer_container
+        width: 100%
+        padding: 20% 10%
+        color: $white
+        font-size: 16px
+        font-weight: 300
+        display: flex
+        flex-wrap: wrap
+        @media screen and ( min-width: 600px )
+            padding: 50px 10%
+            
+    .footer_box
+        width: 50%
+        @media screen and ( min-width: 600px )
+            width: 25%
+        .footer_line
+            width: 38px
+            height: 4px
+            background: $white
+            margin-bottom: 5px
+        .footer_header
+            font-size: 1.25rem
+            font-weight: 700
+        ul
+            padding: 0
+            margin: 2rem 0
+        li
+            list-style: none
+            padding: 5px 0
+    .list3
+        width: 100%
+        @media screen and ( min-width: 600px )
+            width: 50%
+        .footer_line
+            background: $blue
+            display: none
+            @media screen and ( min-width: 600px )
+                display: block
+        .footer_header
+            display: none
+            @media screen and ( min-width: 600px )
+                display: block
+
+
+
+
+// ***************  *************
