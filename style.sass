@@ -25,6 +25,7 @@ $black: #000000
     background-image: url('img/pojist.jpg')
 .inv_bg
     background-image: url('img/invest.jpg')
+    
 
 // ************** GENERAL STYLING *************
 *, *::before, *::after
@@ -134,7 +135,7 @@ p
         width: 100%
         height: 100%
         position: relative
-        transition: transform 1s
+        transition: transform 1.6s
         transform-style: preserve-3d
     .card__face 
         position: absolute
@@ -145,10 +146,15 @@ p
         justify-content: space-around
         align-items: center
         text-align: center
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 100% 
+        @media screen and ( min-width: 1800px)
+            background-size: 130% 
     .card__face--front 
         background: $light
     .card__face--back
-        background: $light
+        // background: $light
         transform: rotateY( 180deg )
     .card__face--back--img
         transform: rotateY( 180deg )
