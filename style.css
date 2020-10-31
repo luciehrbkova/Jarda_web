@@ -181,10 +181,10 @@ p {
   width: 100%;
   height: 100%;
   position: relative;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 1.6s;
+  transition: -webkit-transform 1.6s;
+  transition: transform 1.6s;
+  transition: transform 1.6s, -webkit-transform 1.6s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -204,6 +204,15 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 1800px) {
+  .services .card__face {
+    background-size: 130%;
+  }
 }
 
 .services .card__face--front {
@@ -211,7 +220,6 @@ p {
 }
 
 .services .card__face--back {
-  background: #FAFAFA;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

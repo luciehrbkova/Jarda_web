@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- js -->
     <script src="myScript.js"></script>
+    <!-- or jquery online version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Document</title>
 
 </head>
@@ -46,16 +49,16 @@
                     <div class="grid__column">
                         <div class="square grey"></div>
                         <div class="square light scene">
-                            <div class="card">
-                                <div class="card__face card__face--front"><h3>INVESTICE</h3></div>
+                            <div class="card" id="hypo_card" onclick="hypo_quest()">
+                                <div class="card__face card__face--front"><h3>HYPOTEKY</h3></div>
                                 <div class="card__face card__face--back"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></div>
 
                             </div>
                         </div>
                         <div class="square scene">
-                            <div class="card">
+                            <div class="card" id="inv_img_card">
                                 <div class="card__face card__face--front--img inv_bg"></div>
-                                <div class="card__face card__face--back"><img src="img/invest.jpg"></div>
+                                <div class="card__face card__face--back poj_bg"></div>
                             </div>
                         </div>
                         <div class="square light"><h3>POJIŠTĚNÍ</h3></div>
@@ -74,7 +77,7 @@
         </div>
     </section>
     <!--*********************** NEWS *************************-->
-    <!-- <section class="news">
+    <section class="news">
         <div class="container">
             <div class="fringe"><h2>Aktuality</h2></div>
             <div class="main">
@@ -90,7 +93,7 @@
             <div class="fringe"></div>
         </div>
 
-    </section> -->
+    </section>
     <!--*********************** ABOUT *************************-->
     <section class="about">
         <div class="container">
@@ -292,9 +295,38 @@
     </section>
     <script>
         var card = document.querySelector('.card');
-    card.addEventListener( 'click', function() {
-      card.classList.toggle('is-flipped');
-    });
+        card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+        });
+
+        // var card2 = document.querySelector('#hypo_card');
+        // card2.addEventListener( 'click', function() {
+        // card2.classList.toggle('is-flipped');
+        // });
+
+    //     var elementsBackWhite = document.getElementsByClassName("background_white"); //get all elements
+    // for (var i = 0; i < elementsBackWhite.length; i++)
+    // {
+    //     elementsBackWhite[i].style.backgroundColor = "#000000"
+    // }
+
+        function hypo_quest()
+        {
+           $("#hypo_card").fadeOut(500, function()
+           {
+            $("#hypo_card").html("Jak co nejvýhodněji pořídit investiční nemovitost?").fadeIn(500);
+           });
+
+
+           $("#inv_img_card").toggleClass('is-flipped');
+           
+            // $("#hypo_card").toggle("is-flipped");
+        }
+       
+        left.fadeOut(1000, function() 
+                    {
+                        left.html("VÝNOS").fadeIn(1000);
+                    });
     </script>
 
 </body>
