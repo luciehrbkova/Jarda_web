@@ -902,6 +902,33 @@ p {
   }
 }
 
+.hypoteky .green_button {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 600px) {
+  .hypoteky .green_button {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hypoteky .green_button {
+    position: relative;
+    margin-top: 0px;
+    top: -250px;
+    margin-bottom: 0px;
+    margin-left: calc( 50% - 45px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hypoteky .button_move_left {
+    margin-left: calc( 50% - 160px);
+  }
+}
+
 .third_container {
   width: 100%;
 }
@@ -1071,8 +1098,44 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .vyhoda_text {
-    height: 40.5%;
+  .investice .vyhoda_text {
+    height: 38%;
   }
+  .investice .vyhoda_box {
+    padding-top: 26px;
+  }
+}
+
+.hypoteky .question_rect h4 {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .hypoteky .question_rect h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .hypoteky .question_rect h4 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hypoteky .vyhoda_text {
+    height: 38%;
+  }
+  .hypoteky .vyhoda_box {
+    padding-top: 41px;
+  }
+}
+
+.hypoteky .question_header_pc h4 {
+  font-size: 2.1rem;
+}
+
+.hypoteky .text_right {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
