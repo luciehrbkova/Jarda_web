@@ -591,8 +591,16 @@ p {
   padding: 12px;
 }
 
-.reference .arrow_div:hover {
-  background: #D7DEE1;
+.reference #mob_ref_klient1 {
+  display: none;
+}
+
+.reference #mob_ref_klient3 {
+  display: none;
+}
+
+.reference #mob_ref_klient4 {
+  display: none;
 }
 
 .contact {
