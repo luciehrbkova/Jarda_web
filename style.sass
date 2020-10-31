@@ -4,7 +4,7 @@
 // COLORS
 $blue: #6598C7
 $darkblue: #003152
-$grey:  #D2CED1
+$grey:  #D7DEE1
 $green: #89B700
 $white: #ffffff
 $light: #FAFAFA
@@ -15,6 +15,8 @@ $black: #000000
     background: $white
 .light
     background: $light
+.grey
+    background: $grey
 .blue
     background-image: url('img/bg_blue.jpg')
 .grey
@@ -64,6 +66,15 @@ h3
     font-weight: 600
     font-size: 1.25rem
     letter-spacing: .35px
+h4
+    margin: 0
+    padding: 0
+    font-family: Frank Ruhl Libre
+    color: $darkblue
+    font-weight: 700
+    font-size: 1.25rem
+    text-align: center
+    letter-spacing: .15px
 p
     margin: 0
     padding: 0
@@ -75,12 +86,13 @@ p
     background: $green
     border: 0px
     padding: 0.9rem 0
-    font-weight: 600
+    font-weight: 500
     font-size: 1.125rem
     letter-spacing: 0.45px
     border-radius: 7px
     width: 200px
     margin-left: calc( 50% - 100px )
+    outline: none
 
 // ************** HERO *************
 .hero
@@ -502,4 +514,109 @@ p
 
 
 
-// ***************  *************
+// *************** INVESTICE  *************
+
+.main
+    width: 83%
+.investice
+    .green_button
+        margin-top: 30px
+        margin-bottom: 80px
+        @media screen and ( min-width: 600px )
+            margin-bottom: 100px
+        @media screen and ( min-width: 1200px )
+            position: relative
+            margin-top: 0px
+            top: -250px
+            margin-bottom: 0px
+            margin-left: calc( 50% - 45px )
+    .button_move_left
+        @media screen and ( min-width: 1200px )
+            margin-left: calc( 50% - 160px )
+.third_container
+    width: 100%
+    @media screen and ( min-width: 1200px )
+        display: flex
+        margin-bottom: 0px
+        margin-top: -100px
+.row_reverse
+    flex-direction: row-reverse
+.third_box
+    @media screen and ( min-width: 1200px )
+        width: 40%
+.third_blue_header
+    // background: pink
+    width: 100%
+    display: flex
+    height: 287px
+    @media screen and ( min-width: 600px )
+        height: 459px
+.blue_rect
+    width: 30%
+    @media screen and ( min-width: 1200px )
+        width: 50%
+.question_rect
+    width: 70%
+    padding: 16px 30px
+    @media screen and ( min-width: 1200px )
+        width: 50%
+        h4
+            display: none
+.little_padding
+    padding: 16px 5px
+.question_header_pc
+    display: none
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: relative
+        top: -50px
+        h4
+            font-size: 2.25rem
+.little_margin
+    padding-right: 200px
+    
+.invest_img
+    position: relative
+    z-index: 5
+    top: -200px
+    width: 80%
+    left: 20%
+    @media screen and ( min-width: 600px )
+        top: -400px
+    @media screen and ( min-width: 1200px )
+        width: 75%
+        left: 25%
+        top: -320px
+.no_left
+    left: 0
+.vyhoda_container
+    width: 100%
+    margin-top: -160px
+    @media screen and ( min-width: 600px )
+        display: flex
+        margin-top: -340px
+    @media screen and ( min-width: 1200px )
+        width: 60%
+        margin-top: 90px
+.vyhoda_box
+    width: 100%
+    display: flex
+    flex-direction: column
+    @media screen and ( min-width: 600px )
+        width: 50%
+.vyhoda_header
+    font-family: Barlow
+    font-size: 0.875rem
+    font-weight: 800
+    color: $darkblue
+    text-align: center
+    padding: 16px 0px
+    letter-spacing: 0.28px
+.vyhoda_text
+    // background: pink
+    width: 100%
+    height: 100%
+    padding: 9%
+    @media screen and ( min-width: 1200px )
+        height: 40.5%
+        // height: auto
