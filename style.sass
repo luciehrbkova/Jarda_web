@@ -514,11 +514,26 @@ p
 
 
 
-// *************** INVESTICE  *************
+// *************** INVESTICE & HYPOTEKY *************
 
 .main
     width: 83%
 .investice
+    .green_button
+        margin-top: 30px
+        margin-bottom: 80px
+        @media screen and ( min-width: 600px )
+            margin-bottom: 100px
+        @media screen and ( min-width: 1200px )
+            position: relative
+            margin-top: 0px
+            top: -250px
+            margin-bottom: 0px
+            margin-left: calc( 50% - 45px )
+    .button_move_left
+        @media screen and ( min-width: 1200px )
+            margin-left: calc( 50% - 160px )
+.hypoteky
     .green_button
         margin-top: 30px
         margin-bottom: 80px
@@ -617,6 +632,26 @@ p
     width: 100%
     height: 100%
     padding: 9%
+.investice
     @media screen and ( min-width: 1200px )
-        height: 40.5%
+        .vyhoda_text
+            height: 38%
+        .vyhoda_box
+            padding-top: 26px
         // height: auto
+.hypoteky
+    .question_rect h4
+        font-size: 0.9rem
+        @media screen and ( min-width: 600px )
+            font-size: 1rem
+        @media screen and ( max-width: 321px )
+            font-size: 0.8rem
+    @media screen and ( min-width: 1200px )
+        .vyhoda_text
+            height: 38% 
+        .vyhoda_box
+            padding-top: 41px
+    .question_header_pc h4
+        font-size: 2.1rem
+    .text_right
+        text-align: right
