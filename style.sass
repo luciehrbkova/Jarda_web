@@ -7,7 +7,7 @@ $darkblue: #003152
 $grey: #D7DEE1
 $green: #89B700
 $white: #ffffff
-$light: #FAFAFA
+$light: #F4F4F4
 $black: #000000
 
 // BACKGROUNDS
@@ -41,6 +41,8 @@ body
     font-family: Barlow
 img
     max-width: 100%
+a
+    text-decoration: none
 h1
     margin: 0
     padding: 0
@@ -511,8 +513,7 @@ p
         display: flex
         flex-wrap: wrap
         @media screen and ( min-width: 600px )
-            padding: 50px 10%
-            
+            padding: 50px 10% 
     .footer_box
         width: 50%
         @media screen and ( min-width: 600px )
@@ -531,6 +532,10 @@ p
         li
             list-style: none
             padding: 5px 0
+        a
+            color: $white
+            &:hover
+                text-decoration: underline
     .list3
         width: 100%
         @media screen and ( min-width: 600px )
@@ -689,3 +694,122 @@ p
         font-size: 2.1rem
     .text_right
         text-align: right
+// *************** POJISTENI *************
+.row_tab
+    display: flex
+    flex-direction: column
+    @media screen and ( min-width: 600px )
+        flex-direction: row
+.pojisteni_cont
+    width: 100%
+    background-image: linear-gradient(270deg, #6598C7 0%, #6598C7 30%, #F4F4F4 30%, #F4F4F4 100%)
+    margin-bottom: 80px
+    @media screen and ( min-width: 1200px )
+        height: 760px
+    // &::before
+    //     content: ""
+    //     background: blue
+    //     visibility: visible
+    //     position: absolute
+    //     display: block
+    //     width: 30%
+    //     max-width: 360px
+    //     height: 100%
+    //     margin-left: 53%
+    //     margin-top: 5px
+    //     z-index: 0
+    //     @media screen and ( min-width: 600px )
+    //         margin-top: 0px
+    //     @media screen and ( min-width: 1200px )
+    //         margin-left: 40.5%
+    //         height: 760px
+    .header_box
+        width: 100%
+        padding: 10%
+        position: relative
+        z-index: 1
+        background: $light
+        @media screen and ( min-width: 600px )
+            width: 50%
+            padding-right: 3%
+            padding-top: 15%
+            align-self: center
+        @media screen and ( min-width: 1200px )
+            align-self: flex-start
+            padding-top: 80px
+            padding-right: 5%
+        h4
+            text-align: left
+            text-transform: uppercase
+            padding-bottom: 1rem
+            @media screen and ( min-width: 1200px )
+                font-size: 2.25rem
+    .header_parag p
+        font-family: Frank Ruhl Libre
+        @media screen and ( min-width: 1200px )
+            font-size: 1.25rem
+    .img_box
+        width: 100%
+        // background: pink
+        display: flex
+        @media screen and ( min-width: 600px )
+            width: 50%
+    .img_wrap
+        width: 80% 
+        z-index: 10
+        padding-top: 13px
+        @media screen and ( min-width: 600px )
+            padding-top: 50px
+        @media screen and ( min-width: 1200px )
+            padding-top: 80px    
+    .poj_text
+        background: white
+        position: relative
+        width: 80%
+        margin: 10%
+        padding: 5% 10px
+        font-weight: 200
+        box-shadow:(0px 6px 6px rgba(0, 0, 0, 0.25))
+        @media screen and ( min-width: 600px )
+            padding: 6% 8%
+            margin-top: 5%
+        @media screen and ( min-width: 1200px )
+            margin: 0%
+            margin-left: 10%
+            z-index: 10
+            position: relative
+            margin-top: -400px
+            padding: 3% 5%
+            width: 50%
+    .button_box
+        background: $light
+        padding: 30px
+        @media screen and ( min-width: 600px )
+            background: transparent
+            padding-top: 0
+            padding-bottom: 60px
+        @media screen and ( min-width: 1200px )
+            padding: 48px
+    .button_move_l
+        @media screen and ( min-width: 1200px )
+            margin-left: 23%
+    .button_move_down
+        @media screen and ( min-width: 1200px )
+            margin-top: 150px
+.pojisteni_cont_reverse
+    background-image: linear-gradient(270deg,  #F4F4F4 0%, #F4F4F4 70%, #6598C7 70%, #6598C7 100%)
+    .img_wrap
+        margin-left: 20%
+    .row_tab
+        @media screen and ( min-width: 600px )
+            flex-direction: row-reverse
+    .header_box
+        @media screen and ( min-width: 600px )
+            padding-right: 8%
+            padding-left: 6%
+    .button_move_r
+        @media screen and ( min-width: 1200px )
+            margin-left: 57%
+    .poj_text
+        @media screen and ( min-width: 1200px )
+            margin-left: 40%
