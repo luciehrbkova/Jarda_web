@@ -48,6 +48,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -900,6 +904,14 @@ p {
 .footer .footer_box li {
   list-style: none;
   padding: 5px 0;
+}
+
+.footer .footer_box a {
+  color: #ffffff;
+}
+
+.footer .footer_box a:hover {
+  text-decoration: underline;
 }
 
 .footer .list3 {

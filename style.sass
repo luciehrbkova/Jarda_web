@@ -41,6 +41,8 @@ body
     font-family: Barlow
 img
     max-width: 100%
+a
+    text-decoration: none
 h1
     margin: 0
     padding: 0
@@ -511,8 +513,7 @@ p
         display: flex
         flex-wrap: wrap
         @media screen and ( min-width: 600px )
-            padding: 50px 10%
-            
+            padding: 50px 10% 
     .footer_box
         width: 50%
         @media screen and ( min-width: 600px )
@@ -531,6 +532,10 @@ p
         li
             list-style: none
             padding: 5px 0
+        a
+            color: $white
+            &:hover
+                text-decoration: underline
     .list3
         width: 100%
         @media screen and ( min-width: 600px )
