@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script src="myScript.js"></script>
+    <!-- or jquery online version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Pojisteni</title>
+
+</head>
+
+
+<body>
+    <!--*********************** HERO PAGE *************************-->
+    <section class="pojisteni">
+        <h1>Pojištění</h1>
+        <div class="container">
+            <div class="fringe"><h2>Pojištění</h2></div>
+            <div class="main">
+
+                <!-- ZIVOTNI POJISTENI -->
+                <div class="pojisteni_cont">
+                    <div class="pojisteni_top_box row_tab">
+                        <div class="header_box">
+                            <h4>Životní Pojištění</h4>
+                            <span class="header_parag"><p>Jak nastavit životní pojištění tak, aby v situacích kdy je to nejvíce potřeba skutečně krylo váš příjem, ale zároveň ho svou cenou zbytečně nezatěžovalo?</p></span>
+                        </div>
+                        <div class="img_box">
+                            <div class="img_wrap"><img src="img/poj1.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="poj_text">V dnešní době se čím dál více zaměřujeme na ceny pojištění a speciální akce pojišťoven, 
+                        které jsou většinou jen marketing, který na samotné spolehlivosti zajištění moc nepřidá.
+                        <br><br>
+                        Lidé pak často zapomínají řešit pravou podstatu a základ životního pojištění, tedy zajištění příjmu rodiny 
+                        nebo životního standardu jednotlivce, pro případ jakýchkoliv zdravotních komplikací.
+                        <br><br>
+                        Aby životní pojištění fungovalo správně a vy za něj nevyhazovali zbytečně velké sumy, vyplatí se spočítat 
+                        si nutná pojistná rizika a pojistné částky přímo vám na míru, ideálně pojištění zahrnout jako součást 
+                        komplexního finančního plánování.
+                    </div>
+                    <div class="button_box">
+                        <button class="green_button button_move_l">SPOČÍTEJ</button>
+                    </div>
+                </div>
+
+                <!-- MAJETEK POJISTENI -->
+                <div class="pojisteni_cont pojisteni_cont_reverse">
+                    <div class="pojisteni_top_box row_tab">
+                        <div class="header_box">
+                            <h4>Pojištění Majetku</h4>
+                            <span class="header_parag"><p>Je funkčnost a kvalita vašeho pojištění úměrná k ceně kterou za něj platíte?</p></span>
+                        </div>
+                        <div class="img_box">
+                            <div class="img_wrap"><img src="img/poj3.jpg" alt=""></div>
+                            <!-- <div class="blue_stripe"></div> -->
+                        </div>
+                    </div>
+                    <div class="poj_text">V dnešní době se čím dál více zaměřujeme na ceny pojištění a speciální akce pojišťoven, 
+                        které jsou většinou jen marketing, který na samotné spolehlivosti zajištění moc nepřidá.
+                        <br><br>
+                        Lidé pak často zapomínají řešit pravou podstatu a základ životního pojištění, tedy zajištění příjmu rodiny 
+                        nebo životního standardu jednotlivce, pro případ jakýchkoliv zdravotních komplikací.
+                        <br><br>
+                        Aby životní pojištění fungovalo správně a vy za něj nevyhazovali zbytečně velké sumy, vyplatí se spočítat 
+                        si nutná pojistná rizika a pojistné částky přímo vám na míru, ideálně pojištění zahrnout jako součást 
+                        komplexního finančního plánování.
+                    </div>
+                    <div class="button_box">
+                        <button class="green_button button_move_l button_move_r">SPOČÍTEJ</button>
+                    </div>
+                </div>
+
+                <!-- AUTO POJISTENI -->
+                <div class="pojisteni_cont">
+                    <div class="pojisteni_top_box row_tab">
+                        <div class="header_box">
+                            <h4>Pojištění Auta</h4>
+                            <span class="header_parag"><p>Jednoduché a rychlé srovnání ceny a kvality pojištění vašeho auta</p></span>
+                        </div>
+                        <div class="img_box">
+                            <div class="img_wrap"><img src="img/poj2.jpg" alt=""></div>
+                            <!-- <div class="blue_stripe"></div> -->
+                        </div>
+                    </div>
+                    <div class="poj_text">Při porovnání všech “autopojištění” na trhu doporučuji sledovat nejen nízkou cenu ale i například limity povinného ručení, funkci a možnosti připojištění jako je pojištění skel a asistentce. Nejnižší cena by neměla být vždy jediný ukazatel dobrého pojištění.
+                    </div>
+                    <div class="button_box">
+                        <button class="green_button button_move_l button_move_down">SPOČÍTEJ</button>
+                    </div>
+                </div>
+
+
+         
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--*********************** CONTACT *************************-->
+    <section class="contact">
+        <div class="container">
+            <div class="fringe"><br><h2>Kontakt</h2></div>
+            <div class="main">
+                <div class="contact_container">
+                    <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
+                        <label for="jmeno">Jméno</label><br>
+                        <input type="text" id="jmeno" name="name" required><div class="required"></div>
+                        <label for="cislo">Mobil</label><br>
+                        <input type="number" id="cislo" name="mobil" required><div class="required"></div>
+                        <label for="eadresa">Email</label><br>
+                        <input type="email" id="adresa"  name="mail" required><div class="required"></div>
+                        <label for="zprava">Text zprávy</label><br>
+                        <textarea name="zprava" id="" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="ODESLAT" class="submit">
+                    </form>
+                </div>
+                <div class="map_contactdata">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.655259546002!2d14.
+                    440297115609647!3d50.092741020955835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470
+                    b94bc6a8b5901%3A0xe6bfb36220f7bd9f!2zUG9ixZllxb5uw60gMjAsIDE4NiAwMCBLYXJsw61uLCDEjGVza28!5e0
+                    !3m2!1scs!2suk!4v1589711147314!5m2!1scs!2suk" title="Adresa kanceláře" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="contact_container_data contact_data">
+                        <div class="adress_sm">
+                            <p>Pobřežní 20 <br>Praha 8, 186 00</p>
+                            <div class="socialmedia">
+                                <img src="img/fb.png" alt="" class="sm_img">
+                                <img src="img/wsap.png" alt="" class="sm_img">
+                            </div>
+                        </div>
+                        <div class="email_box">
+                            <div class="email_item">
+                                <img src="img/icon_t.png" alt="" class="icon_phone">
+                                <p>+420 775 564 612</p>
+                            </div>
+                            <div class="email_item">
+                                <img src="img/icon_e.png" alt="" class="icon_phone">
+                                <p>jaroslav.bezouska@4fin.cz</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fringe"></div>
+        </div>
+
+    </section>
+    <!--*********************** FOOTER *************************-->
+    <section class="footer">
+        <div class="container">
+            <div class="fringe"></div>
+            <div class="main">
+                
+                <div class="footer_container">
+
+                    <div class="footer_box">
+                        <div class="footer_line"></div>
+                        <span class="footer_header">MENU</span>
+                        <ul>
+                            <li>Aktuality</li>
+                            <li>O mně</li>
+                            <li>Reference</li>
+                            <li>Kontakt</li>
+                            <li>Pro Klienty</li>
+                        </ul>
+                    </div>
+                    <div class="footer_box list2">
+                        <div class="footer_line"></div>
+                        <span class="footer_header">SLUŽBY</span>
+                        <ul>
+                            <li>Hypotéky</li>
+                            <li>Investice</li>
+                            <li>Pojištění</li>
+                        </ul>
+                    </div>
+                    <div class="footer_box list3">
+                        <div class="footer_line"></div>
+                        <span class="footer_header"><br></span>
+                        <ul>
+                            <li>Cookies</li>
+                            <li>Ochrana osobních údajů (GDPR)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fringe"></div>
+        </div>
+
+    </section>
+    <script>
+        var card = document.querySelector('.card');
+        card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+        });
+
+        // var card2 = document.querySelector('#hypo_card');
+        // card2.addEventListener( 'click', function() {
+        // card2.classList.toggle('is-flipped');
+        // });
+
+    //     var elementsBackWhite = document.getElementsByClassName("background_white"); //get all elements
+    // for (var i = 0; i < elementsBackWhite.length; i++)
+    // {
+    //     elementsBackWhite[i].style.backgroundColor = "#000000"
+    // }
+
+        function hypo_quest()
+        {
+           $("#hypo_card").fadeOut(500, function()
+           {
+            $("#hypo_card").html("Jak co nejvýhodněji pořídit investiční nemovitost?").fadeIn(500);
+           });
+
+
+           $("#inv_img_card").toggleClass('is-flipped');
+           
+            // $("#hypo_card").toggle("is-flipped");
+        }
+       
+        left.fadeOut(1000, function() 
+                    {
+                        left.html("VÝNOS").fadeIn(1000);
+                    });
+    </script>
+
+</body>
+</html>
