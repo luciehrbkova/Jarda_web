@@ -591,16 +591,70 @@ p {
   padding: 12px;
 }
 
-.reference #mob_ref_klient1 {
+@media screen and (min-width: 600px) {
+  .only_mob_reference {
+    display: none;
+  }
+}
+
+.only_mob_reference #mob_ref_klient1 {
   display: none;
 }
 
-.reference #mob_ref_klient3 {
+.only_mob_reference #mob_ref_klient3 {
   display: none;
 }
 
-.reference #mob_ref_klient4 {
+.only_mob_reference #mob_ref_klient4 {
   display: none;
+}
+
+.only_tablet_reference {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .only_tablet_reference {
+    display: block;
+  }
+  .only_tablet_reference .reference_box {
+    width: 100%;
+    height: 501px;
+  }
+  .only_tablet_reference #tab_ref_klient1 {
+    display: none;
+    width: 50%;
+  }
+  .only_tablet_reference #tab_ref_klient2 {
+    display: block;
+    width: 50%;
+  }
+  .only_tablet_reference #tab_ref_klient3 {
+    display: block;
+    width: 50%;
+  }
+  .only_tablet_reference #tab_ref_klient4 {
+    display: none;
+    width: 50%;
+  }
+}
+
+.only_tablet_reference .reference_arrows {
+  padding: 10px 180px;
+}
+
+.only_tablet_reference #tab_ref_left {
+  display: none;
+}
+
+.only_tablet_reference #tab_ref_right {
+  display: none;
+}
+
+.only_tablet_reference #tab_ref_middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact {

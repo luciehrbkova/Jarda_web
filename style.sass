@@ -362,12 +362,42 @@ p
         height: 40px
         background-color: $blue
         padding: 12px
+.only_mob_reference
+    @media screen and ( min-width: 600px )
+        display: none
     #mob_ref_klient1
         display: none
     #mob_ref_klient3
         display: none
     #mob_ref_klient4
         display: none
+.only_tablet_reference
+    display: none
+    @media screen and ( min-width: 600px )
+        display: block
+        .reference_box
+            width: 100%
+            height: 501px
+        #tab_ref_klient1
+            display: none
+            width: 50%
+        #tab_ref_klient2
+            display: block
+            width: 50%
+        #tab_ref_klient3
+            display: block
+            width: 50%
+        #tab_ref_klient4
+            display: none
+            width: 50%
+    .reference_arrows
+        padding: 10px 180px
+    #tab_ref_left
+        display: none
+    #tab_ref_right
+        display: none
+    #tab_ref_middle
+        display: flex
 
 // *************** CONTACT *************
 .contact
