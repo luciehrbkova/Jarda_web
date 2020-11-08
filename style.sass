@@ -10,6 +10,12 @@ $white: #ffffff
 $light: #F4F4F4
 $black: #000000
 
+// colors
+.color_db
+    color: $darkblue
+.color_w
+    color: $white
+
 // BACKGROUNDS
 .white
     background: $white
@@ -96,17 +102,80 @@ p
     margin-left: calc( 50% - 100px )
     outline: none
 
+
 // ************** HERO *************
 .hero
-    background-image: url('img/hero_img.jpg')
-    background-repeat: no-repeat
-    background-size: 100vw
-    min-height: 10vh
-    width: 100%
     height: 100vh
-.hero__title
-    text-align: center
-    padding-top: 5em
+.menu_div
+    width: 100%
+    height: 60px
+    display: flex
+    align-items: center
+    @media screen and ( min-width: 600px)
+        height: 90px
+        justify-content: space-around
+.home_align
+    justify-content: flex-end
+    @media screen and ( min-width: 600px)
+        justify-content: space-around
+
+.home_icon
+    width: 22px
+    height: 25px
+.hmb_icon
+    width: 23px
+    height: 15px
+.blue_fringe
+    width: 100%
+    height: 40vh
+.navigation_cont
+    width: 100%
+    height: 60px
+    @media screen and ( min-width: 600px)
+        height: 90px
+.navigation_box
+    width: 10%
+    height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+.nav_header
+    font-family: Barlow
+    font-weight: 700
+    letter-spacing: 0.47px
+    display: none
+    @media screen and ( min-width: 1200px)
+        display: block
+.hero_img_box
+    width: 100%
+    margin-top: 0px
+    @media screen and ( min-width: 600px)
+        padding-left: 10%
+    @media screen and ( min-width: 1200px)
+        padding-left: 20%
+.hero_img
+    display: inline
+    @media screen and ( min-width: 1200px)
+        display: none
+.hero_img_pc
+    display: none
+    @media screen and ( min-width: 1200px)
+        display: block
+
+.hero_title_cont
+    // 9/12
+    width: 75vw 
+    height: calc( 100vh - 100vw - 60px )
+    position: absolute
+    bottom: 0
+    z-index: 5
+    background: $light
+    @media screen and ( min-width: 600px)
+        width: 66.6vw
+        height: calc( 100vh - 88vw)
+    @media screen and ( min-width: 1200px)
+        width: 33.2vw
+        height: 50vh
 // *************** GENERAL GRID *************
 .container
     width: 100%
@@ -124,7 +193,7 @@ p
 // *************** SERVICES *************
 .services
     height: 100vh
-    margin-top: 100px
+    // margin-top: 100px
     .grid
         min-width: 100%
         display: flex
@@ -813,3 +882,6 @@ p
     .poj_text
         @media screen and ( min-width: 1200px )
             margin-left: 40%
+.gdpr
+    h3
+        margin: 25px 0px
