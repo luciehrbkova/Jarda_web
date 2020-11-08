@@ -175,7 +175,9 @@ p
     display: flex
     flex-direction: column
     justify-content: flex-end
-    padding-bottom: 55px
+    padding-bottom: 100px
+    @media screen and ( min-width: 600px)
+        padding-bottom: 55px
 .down_box
     // background: red
     height: 150px
@@ -239,7 +241,6 @@ p
 .hero_title_cont
     // 9/12
     width: 75vw 
-    height: calc( 100vh - 100vw - 60px )
     position: absolute
     bottom: 0
     z-index: 5
@@ -247,14 +248,12 @@ p
     display: flex
     flex-direction: column
     justify-content: center
-    padding-left: 30px
+    padding: 50px 30px
     @media screen and ( min-width: 600px)
         width: 66.6vw
-        height: calc( 100vh - 88vw)
         padding: 50px 80px
     @media screen and ( min-width: 1200px)
         width: 33.2vw
-        height: 50vh
         padding: 80px 60px
     @media screen and ( max-width: 320px)
         padding-left: 20px
