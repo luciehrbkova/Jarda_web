@@ -15,13 +15,104 @@
 
 
 <body>
+     <!-- MENU -->
+     <div id="mySidenav" class="sidenav">
+        <div class="footer">
+            <div class="container">
+                <div class="fringe"></div>
+                <div class="main">
+                    
+                    <div class="footer_container">
+    
+                        <div class="footer_box">
+                            <div class="footer_line"></div>
+                            <span class="footer_header">MENU</span>
+                            <ul>
+                                <li onclick="closeNav()"><a href="index.html">Domů</a></li>
+                                <li onclick="closeNav()"><a href="index.html#services">Služby</a></li>
+                                <li onclick="closeNav()"><a href="index.html#news">Aktuality</a></li>
+                                <li onclick="closeNav()"><a href="index.html#about">O mně</a></li>
+                                <li onclick="closeNav()"><a href="index.html#reference">Reference</a></li>
+                                <li onclick="closeNav()"><a href="index.html#contact">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_box list2">
+                            <div class="footer_line"></div>
+                            <span class="footer_header">SLUŽBY</span>
+                            <ul>
+                                <li><a href="hypoteky.html">Hypotéky</a></li>
+                                <li><a href="investice.html">Investice</a></li>
+                                <li><a href="pojisteni.html">Pojištění</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_box list3">
+                            <div class="footer_line"></div>
+                            <span class="footer_header"><br></span>
+                            <ul>
+                                <li><a href="cookies.html">Cookies</a></li>
+                                <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fringe">
+                    <div class="menu_div">
+                        <span onclick="closeNav()"><img src="img/cross.png" alt="" class="cross_icon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--*********************** HERO PAGE *************************-->
-    <section class="hero">
-      <br><br><br><br>
-        <h1 class="hero__title">Welcome to my page!!!</h1>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="fringe">
+                <div class="menu_div home_align">
+                    <a href="index.html"><img src="img/home_icon.png" alt="" class="home_icon"></a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="navigation_cont row">
+                    <div class="navigation_box"></div>
+                    <div class="navigation_box"></div>
+                    <div class="navigation_box"></div>
+                    <div class="navigation_box"><span class="nav_header color_db"><a href="hypoteky.html">HYPOTÉKY</a></span></div>
+                    <div class="navigation_box"><span class="nav_header color_db"><a href="investice.html">INVESTICE</a></span></div>
+                    <div class="navigation_box"><span class="nav_header color_db"><a href="pojisteni.html">POJIŠTĚNÍ</a></span></div>
+                    <div class="navigation_box"><span class="nav_header color_db"><a href="index.html#news">AKTUALITY</a></span></div>
+                    <div class="navigation_box"><span class="nav_header color_db"><a href="index.html#about">O MNĚ</a></span></div>
+                    <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#reference">REFERENCE</a></span></div>
+                    <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#contact">KONTAKT</a></span></div>
+                </div>
+                <div class="hero_img_box">
+                    <img src="img/hero_mob.jpg" alt="" class="hero_img">
+                    <img src="img/hero_pc.jpg" alt="" class="hero_img_pc">
+                </div>
+                <div class="hero_title_cont">
+                    <span class="hero_name">JAROSLAV</span>
+                    <span class="hero_name surname">BEZOUŠKA</span>
+                    <span class="podtitul">Top great amazing Manager</span>
+                    <button class="green_button">CHCI VÍCE INFO</button>
+
+                </div>
+
+            </div>
+            <div class="fringe">
+                <div class="menu_div blue">
+                    <span onclick="openNav()"><img src="img/hmb_icon.png" alt="" class="hmb_icon"></span>
+                </div>
+                <div class="blue_fringe blue"></div>
+                <div class="down_fringe">
+                    <div class="down_box">
+                        <p class="down">Posuňte dolů</p>
+                    </div>
+                    <a href="#services"><img src="img/sipka.png" alt="" class="sipka_icon"></a>
+                </div>
+            </div>
+        </div>
     </section>
     <!--*********************** SERVICES *************************-->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="fringe"><br><h2>Služby</h2></div>
             <div class="main">
@@ -77,7 +168,7 @@
         </div>
     </section>
     <!--*********************** NEWS *************************-->
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <div class="fringe"><br><h2>Aktuality</h2></div>
             <div class="main">
@@ -95,7 +186,7 @@
 
     </section>
     <!--*********************** ABOUT *************************-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="fringe"><br><h2>O Mně</h2></div>
             <div class="main">
@@ -118,7 +209,7 @@
                                 směr, jakým se budou finance ubírat v dalších letech.</p>
                         </div>
                         <div class="portrait">
-                            <img src="img/portrait.png" alt="" >
+                            <img src="img/portrait.jpg" alt="" >
                         </div>
                 
                     </div>
@@ -169,7 +260,7 @@
 
     </section>
     <!--*********************** REFERENCE *************************-->
-    <section class="reference">
+    <section class="reference" id="reference">
         <div class="container">
             <div class="fringe"><br><h2>Slova mých klientů</h2></div>
             <div class="main">
@@ -390,7 +481,7 @@
         
     </section>
     <!--*********************** CONTACT *************************-->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="fringe"><br><h2>Kontakt</h2></div>
             <div class="main">
@@ -451,11 +542,12 @@
                         <div class="footer_line"></div>
                         <span class="footer_header">MENU</span>
                         <ul>
-                            <li>Aktuality</li>
-                            <li>O mně</li>
-                            <li>Reference</li>
-                            <li>Kontakt</li>
-                            <li>Pro Klienty</li>
+                            <li><a href="index.html">Domů</a></li>
+                            <li><a href="index.html#services">Služby</a></li>
+                            <li><a href="index.html#news">Aktuality</a></li>
+                            <li><a href="index.html#about">O mně</a></li>
+                            <li><a href="index.html#reference">Reference</a></li>
+                            <li><a href="index.html#contact">Kontakt</a></li>
                         </ul>
                     </div>
                     <div class="footer_box list2">
@@ -471,8 +563,8 @@
                         <div class="footer_line"></div>
                         <span class="footer_header"><br></span>
                         <ul>
-                            <li>Cookies</li>
-                            <li>Ochrana osobních údajů (GDPR)</li>
+                            <li><a href="cookies.html">Cookies</a></li>
+                            <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
                         </ul>
                     </div>
                 </div>

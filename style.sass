@@ -10,6 +10,12 @@ $white: #ffffff
 $light: #F4F4F4
 $black: #000000
 
+// colors
+.color_db
+    color: $darkblue
+.color_w
+    color: $white
+
 // BACKGROUNDS
 .white
     background: $white
@@ -33,6 +39,8 @@ $black: #000000
 *, *::before, *::after
     box-sizing: border-box
     font-size: 16px
+html
+    scroll-behavior: smooth
 body
     margin: 0
     padding: 0
@@ -43,6 +51,8 @@ img
     max-width: 100%
 a
     text-decoration: none
+    color: inherit
+
 h1
     margin: 0
     padding: 0
@@ -95,18 +105,187 @@ p
     width: 200px
     margin-left: calc( 50% - 100px )
     outline: none
+    transition: 0.5s
+    &:hover
+        background: $darkblue
+.sidenav 
+    width: 100vw
+    position: fixed //* Stay in place */
+    left: 100vw
+    z-index: 100 //* Stay on top */
+    overflow-x: hidden //* Disable horizontal scroll */
+    transition: 0.5s //* 0.5 second transition effect to slide in the sidenav */
+    .menuSluzby
+        padding-left: 30px
+    .footer
+        margin-top: 0
+    .footer_container
+        padding-top: 100px
+        height: 100vh
+        // @media screen and ( min-width: 600px)
+        //     height: 66vh
+        // @media screen and ( min-width: 1200px)
+        //     height: 100vh
+        //     width: 60vw
+    .footer_box
+        padding-top: 50px
+        @media screen and ( min-width: 600px)
+            padding-top: 200px
+        @media screen and ( min-width: 1200px)
+            padding-top: 100px
+        @media screen and ( max-width: 320px)
+            padding-top: 20px
+        
 
 // ************** HERO *************
 .hero
-    background-image: url('img/hero_img.jpg')
-    background-repeat: no-repeat
-    background-size: 100vw
-    min-height: 10vh
-    width: 100%
     height: 100vh
-.hero__title
-    text-align: center
-    padding-top: 5em
+.menu_div
+    width: 100%
+    height: 60px
+    display: flex
+    align-items: center
+    @media screen and ( min-width: 600px)
+        height: 90px
+        justify-content: space-around
+.home_align
+    justify-content: flex-end
+    @media screen and ( min-width: 600px)
+        justify-content: space-around
+.home_icon
+    width: 22px
+    height: 25px
+.hmb_icon
+    width: 23px
+    height: 15px
+    cursor: pointer
+.cross_icon
+    width: 18px
+    height: 17px
+    cursor: pointer
+.sipka_icon
+    width: 22px
+    height: 37px
+    margin-left: calc( 50% - 11px )
+.blue_fringe
+    width: 100%
+    height: 40vh
+.down_fringe
+    height: 50vh
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding-bottom: 20px
+    @media screen and ( min-width: 600px)
+        padding-bottom: 55px
+.down_box
+    // background: red
+    height: 150px
+    padding-top: 100px
+.down
+    color: $darkblue
+    font-weight: 300
+    font-size: 1rem
+    text-align: right
+    letter-spacing: .3px
+    white-space: nowrap
+    transform: rotate(-90deg)
+.navigation_cont
+    width: 100%
+    height: 60px
+    @media screen and ( min-width: 600px)
+        height: 90px
+.navigation_box
+    width: 10%
+    height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+.nav_header
+    font-family: Barlow
+    font-weight: 600
+    letter-spacing: 0.47px
+    display: none 
+    @media screen and ( min-width: 1200px)
+        display: block
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 0.5px
+        bottom: 0
+        left: 2
+        background-color: $darkblue
+        visibility: visible
+        // transform: scaleX(0)
+        transition: all 0.3s ease-in-out
+    // &:hover::before
+    //     visibility: visible
+    //     transform: scaleX(0.6) 
+.hero_img_box
+    width: 100%
+    margin-top: 0px
+    @media screen and ( min-width: 600px)
+        padding-left: 10%
+    @media screen and ( min-width: 1200px)
+        padding-left: 20%
+.hero_img
+    display: inline
+    @media screen and ( min-width: 1200px)
+        display: none
+.hero_img_pc
+    display: none
+    @media screen and ( min-width: 1200px)
+        display: block
+
+.hero_title_cont
+    // 9/12
+    width: 75vw 
+    height: calc( 100vh - 100vw - 60px )
+    position: absolute
+    bottom: 0
+    z-index: 5
+    background: $light
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 30px
+    @media screen and ( min-width: 600px)
+        width: 66.6vw
+        height: calc( 100vh - 88vw)
+        padding: 50px 80px
+    @media screen and ( min-width: 1200px)
+        width: 33.2vw
+        height: 50vh
+        padding: 80px 60px
+    @media screen and ( max-width: 320px)
+        padding-left: 20px
+    .green_button
+        margin-left: 0
+        margin-top: 30px
+        @media screen and ( max-width: 320px)
+            margin-top: 10px
+.hero_name
+    margin: 0
+    padding: 0
+    font-family: Frank Ruhl Libre
+    color: $darkblue
+    font-weight: 700
+    font-size: 1.375rem
+    @media screen and ( min-width: 600px)
+        font-size: 2.5rem
+        letter-spacing: 2.5px
+.surname
+    margin-left: 15px
+    font-size: 2.125rem
+    @media screen and ( min-width: 600px)
+        font-size: 3.75rem
+.podtitul
+    font-weight: 200
+    letter-spacing: 0.3px
+    color: $darkblue
+
+
 // *************** GENERAL GRID *************
 .container
     width: 100%
@@ -124,7 +303,7 @@ p
 // *************** SERVICES *************
 .services
     height: 100vh
-    margin-top: 100px
+    // margin-top: 100px
     .grid
         min-width: 100%
         display: flex
@@ -504,59 +683,65 @@ p
         background: $blue
     .fringe
         background: $blue
-    .footer_container
-        width: 100%
-        padding: 20% 10%
+.footer_container
+    width: 100%
+    padding: 20% 10%
+    color: $white
+    font-size: 16px
+    font-weight: 300
+    display: flex
+    flex-wrap: wrap
+    @media screen and ( min-width: 600px )
+        padding: 50px 10% 
+.footer_box
+    width: 50%
+    @media screen and ( min-width: 600px )
+        width: 25%
+    .footer_line
+        width: 38px
+        height: 4px
+        background: $white
+        margin-bottom: 5px
+    .footer_header
+        font-size: 1.25rem
+        font-weight: 700
+    ul
+        padding: 0
+        margin: 2rem 0
+    li
+        list-style: none
+        padding: 5px 0
+    a
         color: $white
-        font-size: 16px
-        font-weight: 300
-        display: flex
-        flex-wrap: wrap
-        @media screen and ( min-width: 600px )
-            padding: 50px 10% 
-    .footer_box
+        &:hover
+            text-decoration: underline
+.list3
+    width: 100%
+    @media screen and ( min-width: 600px )
         width: 50%
+    .footer_line
+        background: $blue
+        display: none
         @media screen and ( min-width: 600px )
-            width: 25%
-        .footer_line
-            width: 38px
-            height: 4px
-            background: $white
-            margin-bottom: 5px
-        .footer_header
-            font-size: 1.25rem
-            font-weight: 700
-        ul
-            padding: 0
-            margin: 2rem 0
-        li
-            list-style: none
-            padding: 5px 0
-        a
-            color: $white
-            &:hover
-                text-decoration: underline
-    .list3
-        width: 100%
+            display: block
+    .footer_header
+        display: none
         @media screen and ( min-width: 600px )
-            width: 50%
-        .footer_line
-            background: $blue
-            display: none
-            @media screen and ( min-width: 600px )
-                display: block
-        .footer_header
-            display: none
-            @media screen and ( min-width: 600px )
-                display: block
+            display: block
 
 
 
 
 // *************** INVESTICE & HYPOTEKY *************
-
 .main
     width: 83%
+.top_magin_sekce
+    padding-top: 50px
+    @media screen and ( min-width: 600px )
+        padding-top: 100px
+    @media screen and ( min-width: 1200px )
+        padding-top: 200px
+
 .investice
     .green_button
         margin-top: 30px
@@ -695,6 +880,10 @@ p
     .text_right
         text-align: right
 // *************** POJISTENI *************
+#pojisteni
+    .top_magin_sekce
+        @media screen and ( min-width: 1200px )
+            padding-top: 90px
 .row_tab
     display: flex
     flex-direction: column
@@ -706,23 +895,6 @@ p
     margin-bottom: 80px
     @media screen and ( min-width: 1200px )
         height: 760px
-    // &::before
-    //     content: ""
-    //     background: blue
-    //     visibility: visible
-    //     position: absolute
-    //     display: block
-    //     width: 30%
-    //     max-width: 360px
-    //     height: 100%
-    //     margin-left: 53%
-    //     margin-top: 5px
-    //     z-index: 0
-    //     @media screen and ( min-width: 600px )
-    //         margin-top: 0px
-    //     @media screen and ( min-width: 1200px )
-    //         margin-left: 40.5%
-    //         height: 760px
     .header_box
         width: 100%
         padding: 10%
@@ -813,3 +985,13 @@ p
     .poj_text
         @media screen and ( min-width: 1200px )
             margin-left: 40%
+.gdpr
+    h3
+        margin: 25px 0px
+.top_magin_gdpr
+    padding-top: 50px
+    @media screen and ( min-width: 600px )
+        padding-top: 100px
+    @media screen and ( min-width: 1200px )
+        padding-top: 70px
+        
