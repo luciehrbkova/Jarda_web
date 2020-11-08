@@ -257,7 +257,13 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 55px;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  .down_fringe {
+    padding-bottom: 55px;
+  }
 }
 
 .down_box {
@@ -365,7 +371,6 @@ p {
 
 .hero_title_cont {
   width: 75vw;
-  height: calc( 100vh - 100vw - 60px);
   position: absolute;
   bottom: 0;
   z-index: 5;
@@ -380,13 +385,12 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 30px;
+  padding: 50px 30px;
 }
 
 @media screen and (min-width: 600px) {
   .hero_title_cont {
     width: 66.6vw;
-    height: calc( 100vh - 88vw);
     padding: 50px 80px;
   }
 }
@@ -394,7 +398,6 @@ p {
 @media screen and (min-width: 1200px) {
   .hero_title_cont {
     width: 33.2vw;
-    height: 50vh;
     padding: 80px 60px;
   }
 }
