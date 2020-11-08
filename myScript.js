@@ -1,5 +1,15 @@
 
 
+// navigation Menu
+function openNav() 
+{
+    document.getElementById("mySidenav").style.left = "0px";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav() 
+{
+    document.getElementById("mySidenav").style.left = "100vw";
+}
 // card flip
 
 // function flipCard() {
