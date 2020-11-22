@@ -9,6 +9,7 @@ function openNav()
 function closeNav() 
 {
     document.getElementById("mySidenav").style.left = "100vw";
+   
 }
 // card flip
 
