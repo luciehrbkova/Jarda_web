@@ -177,9 +177,9 @@ p
     display: flex
     flex-direction: column
     justify-content: flex-end
-    padding-bottom: 100px
-    @media screen and ( min-width: 600px)
-        padding-bottom: 55px
+    padding-bottom: 150px
+    // @media screen and ( min-width: 600px)
+    //     padding-bottom: 55px
 .down_box
     // background: red
     height: 150px
@@ -287,6 +287,10 @@ p
     min-width: 83%
 .row
     display: flex
+.pc_only
+    display: none
+    @media screen and ( min-width: 1200px)
+        display: block
 
 // *************** SERVICES *************
 .services
@@ -394,12 +398,19 @@ p
         max-width: 313px
         margin: 0 auto
         padding-bottom: 2rem
+    .diplom_box
+        display: flex
+        flex-direction: column
+        padding-bottom: 50px
+        @media screen and ( min-width: 600px)
+            flex-direction: row
+            align-items: center
     .diplom
         max-width: 313px
         margin: 0 auto
-    .diplom + .diplom
-        padding-bottom: 2rem
-    // tablet+desktop
+    // .diplom + .diplom
+    //     padding-bottom: 2rem
+   
     @media screen and ( min-width: 600px)
         .about__row
             display: flex

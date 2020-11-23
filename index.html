@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <!-- ManyChat -->       
     <script src="//widget.manychat.com/110920740663472.js" async="async"></script>
-    <!-- js -->
-    <script src="myScript.js"></script>
-    <!-- or jquery online version -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Document</title>
 
@@ -170,7 +166,7 @@
         </div>
     </section>
     <!--*********************** NEWS *************************-->
-    <section class="news" id="news">
+    <!-- <section class="news" id="news">
         <div class="container">
             <div class="fringe"><br><h2>Aktuality</h2></div>
             <div class="main">
@@ -186,7 +182,7 @@
             <div class="fringe"></div>
         </div>
 
-    </section>
+    </section> -->
     <!--*********************** ABOUT *************************-->
     <section class="about" id="about">
         <div class="container">
@@ -250,10 +246,16 @@
                     </div>
                 </div>
                 <!-- DIPLOMS -->
-                <div class="diplom">
-                    <img src="img/diplom1.jpg" alt="" >
-                </div> <div class="diplom">
-                    <img src="img/diplom2.jpg" alt="" >
+                <div class="diplom_box">
+                    <div class="diplom pc_only">
+                        <img src="img/diplom3.jpg" alt="" >
+                    </div>
+                    <div class="diplom">
+                        <img src="img/diplom1.jpg" alt="" >
+                    </div>
+                    <div class="diplom">
+                        <img src="img/diplom2.jpg" alt="" >
+                    </div>
                 </div>
                 <button class="green_button">CHCI VÍCE INFO</button>
             </div>
@@ -575,10 +577,28 @@
         </div>
 
     </section>
+    <!-- js -->
+    <script src="myScript.js"></script>
+    <!-- or jquery online version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
         var card = document.querySelector('.card');
         card.addEventListener( 'click', function() {
         card.classList.toggle('is-flipped');
+        });
+
+        // gsap
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".header2", {
+            ScrollTrigger: {
+                trigger: ".h2",
+                start: "bottom 5%",
+                markers: true,
+                toggleActions: "restart pause restart pause"
+            },
+            x: 200,
         });
 
         // var card2 = document.querySelector('#hypo_card');

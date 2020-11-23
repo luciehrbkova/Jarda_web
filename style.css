@@ -258,13 +258,7 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 100px;
-}
-
-@media screen and (min-width: 600px) {
-  .down_fringe {
-    padding-bottom: 55px;
-  }
+  padding-bottom: 150px;
 }
 
 .down_box {
@@ -464,6 +458,16 @@ p {
   display: flex;
 }
 
+.pc_only {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .pc_only {
+    display: block;
+  }
+}
+
 .services {
   height: 100vh;
 }
@@ -644,13 +648,32 @@ p {
   padding-bottom: 2rem;
 }
 
+.about .diplom_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .about .diplom_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .about .diplom {
   max-width: 313px;
   margin: 0 auto;
-}
-
-.about .diplom + .diplom {
-  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 600px) {
