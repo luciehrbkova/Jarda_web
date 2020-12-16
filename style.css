@@ -504,6 +504,30 @@ p {
   }
 }
 
+.mobile_only {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile_only {
+    display: none;
+  }
+}
+
+.mobile_hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile_hide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .services {
   height: 100vh;
 }
@@ -543,9 +567,7 @@ p {
 
 @media screen and (min-width: 600px) {
   .services .containerBack {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -555,9 +577,7 @@ p {
 }
 
 .services .contBackMob {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -622,7 +642,7 @@ p {
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 130%;
 }
 
 .services .card__face a {
@@ -672,6 +692,20 @@ p {
   text-decoration: underline;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.services .align-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 3px;
+}
+
+.services .align-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 3px;
 }
 
 @media screen and (min-width: 600px) {
@@ -1082,6 +1116,12 @@ p {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .only_tablet_reference {
+    display: none;
+  }
+}
+
 .only_tablet_reference .reference_arrows {
   padding: 10px 180px;
 }
@@ -1098,6 +1138,40 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.only_pc_reference {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .only_pc_reference {
+    display: block;
+  }
+  .only_pc_reference .rb_main {
+    font-size: 16px;
+  }
+  .only_pc_reference .rb_side {
+    font-size: 12px;
+  }
+  .only_pc_reference #tab_ref_klient2 {
+    display: block;
+    width: 30%;
+  }
+  .only_pc_reference #tab_ref_klient3 {
+    display: block;
+    width: 40%;
+  }
+  .only_pc_reference #tab_ref_klient4 {
+    display: block;
+    width: 30%;
+  }
+}
+
+.only_pc_reference .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact {
@@ -1401,6 +1475,19 @@ p {
 @media screen and (min-width: 1200px) {
   .top_magin_sekce {
     padding-top: 200px;
+  }
+}
+
+.target {
+  display: inline-block;
+  position: relative;
+  top: 60px;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .target {
+    top: -120px;
   }
 }
 

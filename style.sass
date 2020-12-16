@@ -313,6 +313,15 @@ p
     display: none
     @media screen and ( min-width: 1200px)
         display: block
+.mobile_only
+    display: flex
+    @media screen and ( min-width: 600px)
+        display: none
+
+.mobile_hide
+    display: none
+    @media screen and ( min-width: 600px)
+        display: flex
 
 // *************** SERVICES *************
 .services
@@ -336,12 +345,12 @@ p
     .containerBack
         display: none
         @media screen and ( min-width: 600px)
-            display: flex
+            display: none
             align-items: center
             padding: 30px 10px
             cursor: pointer
     .contBackMob
-        display: flex
+        display: none
         align-items: center
         padding: 30px 10px
         cursor: pointer
@@ -377,7 +386,7 @@ p
         text-align: center
         background-position: center
         background-repeat: no-repeat
-        background-size: 120% 
+        background-size: 130% 
         a
             display: flex
             align-items: center
@@ -401,6 +410,12 @@ p
             &:hover
                 text-decoration: underline
                 transition: 1s
+    .align-right
+        justify-content: flex-end
+        padding-right: 3px
+    .align-left
+        justify-content: flex-start
+        padding-left: 3px
 
 @media screen and ( min-width: 600px)
     .grid
@@ -626,6 +641,8 @@ p
         #tab_ref_klient4
             display: none
             width: 50%
+    @media screen and ( min-width: 600px )
+        display: none
     .reference_arrows
         padding: 10px 180px
     #tab_ref_left
@@ -634,6 +651,26 @@ p
         display: none
     #tab_ref_middle
         display: flex
+.only_pc_reference
+    display: none
+    @media screen and ( min-width: 600px )
+        display: block
+        .rb_main
+            font-size: 16px
+        .rb_side
+            font-size: 12px
+        #tab_ref_klient2
+            display: block
+            width: 30%
+        #tab_ref_klient3
+            display: block
+            width: 40%
+        #tab_ref_klient4
+            display: block
+            width: 30%
+    .row
+        align-items: center
+
 
 // *************** CONTACT *************
 .contact
@@ -796,6 +833,14 @@ p
         padding-top: 100px
     @media screen and ( min-width: 1200px )
         padding-top: 200px
+
+.target
+    display: inline-block
+    position: relative
+    top: 60px
+    visibility: hidden
+    @media screen and ( min-width: 1200px )
+        top: -120px
 
 .investice
     .green_button
