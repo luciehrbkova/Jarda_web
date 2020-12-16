@@ -116,41 +116,95 @@
             <div class="main">
                 <div class="grid row">
                     <div class="mobile_hidden">
-                        <div class="square blue"></div>
+                        <div class="square blue">
+                            <div onclick="services_back()" class="containerBack">
+                                <div class="sipkaLeft"><img src="img/sipkaLeft.png" alt=""></div>
+                                <p>Krok zpět</p>
+                            </div>
+                        </div>
                         <div class="square light"></div>
-                        <div class="square grey"></div>
+                        <div class="square scene">
+                            <div class="card" id="zajima_1">
+                                <div class="card__face card__face--front--img grey"></div>
+                                <div class="card__face card__face--back light">
+                                    <h3>CO VÁS ZAJÍMÁ?</h3>
+                                </div>
+                            </div>
+                        </div>
                         <div class="square light"></div>
                         <div class="square grey"></div>
                     </div>
                     <div class="grid__column">
                         <div class="square light"></div>
-                        <div class="square hypo_bg"></div>
-                        <div class="square light scene">
-                            <div class="card">
-                                <div class="card__face card__face--front"><h3>INVESTICE</h3></div>
-                                <div class="card__face card__face--back"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></div>
+                        <!-- CO VAS ZAJIMA - PART 1 -->
+                        <!-- <div class="square scene">
+                            <div class="card" id="zajima_1">
+                                <div class="card__face card__face--front--img light"></div>
+                                <div class="card__face card__face--back blue"></div>
+                            </div>
+                        </div> -->
+                        <!-- image 1 -->
+                        <div class="square scene">
+                            <div class="card" id="inv_img_card_1">
+                                <div class="card__face card__face--front--img hypo_bg"></div>
+                                <div class="card__face card__face--back" id="sq_img_b_1"></div>
+                            </div>
+                        </div>
+                         <!-- question 2 -->
+                        <div class="square scene">
+                            <div class="card" onclick="inv_quest()">
+                                <div class="card__face card__face--front">
+                                    <h3 id="sq_header_2">INVESTICE</h3>
+                                    <a href="hypoteky.html" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
+                                    <a href="investice.html" id="sq_question_2i"><p>Investice pro pokročilé</p></a>
+                                    <a href="pojisteni.html" id="sq_question_2p"><p>Pojištění Majetku</p></a>
+                                </div>
+                                <!-- <div class="card__face card__face--back"><p>Jak nejvýhodněji financovat nákup  investiční nemovitosti?</p></div> -->
 
                             </div>
                         </div>
-                        <div class="square poj_bg"></div>
-                        <div class="square light"></div>
+                        <!-- image 3 -->
+                        <div class="square scene">
+                            <div class="card" id="inv_img_card_3">
+                                <div class="card__face card__face--front--img poj_bg"></div>
+                                <div class="card__face card__face--back" id="sq_img_b_3"></div>
+                            </div>
+                        </div>
+                        <div class="square light">
+                            <div class="contBackMob" onclick="services_back()">
+                                <div class="sipkaLeft"><img src="img/sipkaLeft.png" alt=""></div>
+                                <p>Krok zpět</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid__column">
                         <div class="square grey"></div>
+                        <!-- question 1 -->
                         <div class="square light scene">
                             <div class="card" id="hypo_card" onclick="hypo_quest()">
-                                <div class="card__face card__face--front"><h3>HYPOTEKY</h3></div>
-                                <div class="card__face card__face--back"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></div>
-
+                                <div class="card__face card__face--front">
+                                    <h3 id="sq_header_1">HYPOTÉKY</h3>
+                                    <a href="hypoteky.html" id="sq_question_1h"><p>Jak získat svoji první hypotéku?</p></a>
+                                    <a href="investice.html" id="sq_question_1i"><p>Začínám investovat</p></a>
+                                    <a href="pojisteni.html" id="sq_question_1p"><p>Životní Pojištění</p></a>
+                                </div>
+                                <!-- <div class="card__face card__face--back"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></div> -->
                             </div>
                         </div>
+                        <!-- image 2 -->
                         <div class="square scene">
-                            <div class="card" id="inv_img_card">
+                            <div class="card" id="inv_img_card_2">
                                 <div class="card__face card__face--front--img inv_bg"></div>
-                                <div class="card__face card__face--back poj_bg"></div>
+                                <div class="card__face card__face--back" id="sq_img_b_2"></div>
                             </div>
                         </div>
-                        <div class="square light"><h3>POJIŠTĚNÍ</h3></div>
+                        <!-- question 3 -->
+                        <div class="square light" onclick="poj_quest()">
+                            <h3 id="sq_header_3">POJIŠTĚNÍ</h3>
+                            <a href="hypoteky.html" id="sq_question_3h"><p>Jak zlevnit nebo předčasně splatit stávající hypotéku?</p></a>
+                            <a href="investice.html" id="sq_question_3i"><p>Jsou mé investice správně nastaveny?</p></a>
+                            <a href="pojisteni.html" id="sq_question_3p"><p>Pojištění Auta</p></a>
+                        </div>
                         <div class="square blue"></div>
                     </div>
                     <div class="mobile_hidden">
@@ -584,10 +638,6 @@
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
-        var card = document.querySelector('.card');
-        card.addEventListener( 'click', function() {
-        card.classList.toggle('is-flipped');
-        });
 
         // gsap
         gsap.registerPlugin(ScrollTrigger);
@@ -657,24 +707,102 @@
 
       
 
-        
+
+        var initPosition = true;
+
+        function coVasZajima()
+        {
+            $('#zajima_1').addClass('is-flipped')
+        }
 
         function hypo_quest()
-        {
-           $("#hypo_card").fadeOut(500, function()
+        {   
+            // question 1 + 2 + 3_________________
+            $("#sq_header_1, #sq_header_2, #sq_header_3").fadeOut(500, function()
            {
-            $("#hypo_card").html("Jak co nejvýhodněji pořídit investiční nemovitost?").fadeIn(500);
+            $("#sq_question_1h, #sq_question_2h, #sq_question_3h").fadeIn(500);
+           });
+   
+            //    image 1______________________
+            $('#sq_img_b_1').removeClass('inv_bg_1 poj_bg_1').addClass('hypo_bg_1')
+            //    image 2______________________
+            $('#sq_img_b_2').removeClass('inv_bg_2 poj_bg_2').addClass('hypo_bg_2')
+            //    image 3______________________
+            $('#sq_img_b_3').removeClass('inv_bg_3 poj_bg_3').addClass('hypo_bg_3')
+
+            $("#inv_img_card_1, #inv_img_card_2, #inv_img_card_3").toggleClass('is-flipped');
+            coVasZajima()
+            initPosition = false;
+        }
+
+        function inv_quest()
+        {   
+           // question 1 + 2 + 3_________________
+           $("#sq_header_1, #sq_header_2, #sq_header_3").fadeOut(500, function()
+           {
+            $("#sq_question_1i, #sq_question_2i, #sq_question_3i").fadeIn(500);
            });
 
+            //    image 1______________________
+            $('#sq_img_b_1').removeClass('hypo_bg_1 poj_bg_1').addClass('inv_bg_1')
+            //    image 2______________________
+            $('#sq_img_b_2').removeClass('hypo_bg_2 poj_bg_2').addClass('inv_bg_2')
+            //    image 3______________________
+            $('#sq_img_b_3').removeClass('hypo_bg_3 poj_bg_3').addClass('inv_bg_3')
 
-           $("#inv_img_card").toggleClass('is-flipped');
-           
-            // $("#hypo_card").toggle("is-flipped");
+            $("#inv_img_card_1, #inv_img_card_2, #inv_img_card_3").toggleClass('is-flipped');
+            initPosition = false;
         }
-        // left.fadeOut(1000, function() 
-        //             {
-        //                 left.html("VÝNOS").fadeIn(1000);
-        //             });
+
+        function poj_quest()
+        {   
+           // question 1 + 2 + 3_________________
+           $("#sq_header_1, #sq_header_2, #sq_header_3").fadeOut(500, function()
+           {
+            $("#sq_question_1p, #sq_question_2p, #sq_question_3p").fadeIn(500);
+           });
+
+            //    image 1______________________
+            $('#sq_img_b_1').removeClass('hypo_bg_1 inv_bg_1').addClass('poj_bg_1')
+            //    image 2______________________
+            $('#sq_img_b_2').removeClass('hypo_bg_2 inv_bg_2').addClass('poj_bg_2')
+            //    image 3______________________
+            $('#sq_img_b_3').removeClass('hypo_bg_3 inv_bg_3').addClass('poj_bg_3')
+
+            $("#inv_img_card_1, #inv_img_card_2, #inv_img_card_3").toggleClass('is-flipped');
+            initPosition = false;
+        }
+      
+
+    
+        function services_back()
+        {
+            if (initPosition == false)
+            {
+                // question 1_________________
+                $("#sq_question_1h, #sq_question_1i, #sq_question_1p").fadeOut(500, function()
+                {
+                    $("#sq_header_1").delay(500).fadeIn(500);
+                });
+                // question 2_________________
+                $("#sq_question_2h, #sq_question_2i, #sq_question_2p").fadeOut(500, function()
+                {
+                    $("#sq_header_2").delay(500).fadeIn(500);
+                });
+                // question 3_________________
+                $("#sq_question_3h, #sq_question_3i, #sq_question_3p").fadeOut(500, function()
+                {
+                    $("#sq_header_3").delay(500).fadeIn(500);
+                });
+
+                // img 1 + 2 + 3_________________
+                $("#inv_img_card_1, #inv_img_card_2, #inv_img_card_3").toggleClass('is-flipped');
+                initPosition = true;
+            }  
+          
+        }
+
+
     </script>
 
 </body>

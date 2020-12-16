@@ -39,6 +39,42 @@
   background-image: url("img/invest.jpg");
 }
 
+.hypo_bg_1 {
+  background-image: url("img/hypo1.jpg");
+}
+
+.hypo_bg_2 {
+  background-image: url("img/hypo2.jpg");
+}
+
+.hypo_bg_3 {
+  background-image: url("img/hypo3.jpg");
+}
+
+.inv_bg_1 {
+  background-image: url("img/invest1.png");
+}
+
+.inv_bg_2 {
+  background-image: url("img/invest2.png");
+}
+
+.inv_bg_3 {
+  background-image: url("img/invest3.png");
+}
+
+.poj_bg_1 {
+  background-image: url("img/poj1.jpg");
+}
+
+.poj_bg_2 {
+  background-image: url("img/poj22.jpg");
+}
+
+.poj_bg_3 {
+  background-image: url("img/poj3.jpg");
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -501,6 +537,54 @@ p {
           align-items: center;
 }
 
+.services .containerBack {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .services .containerBack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 10px;
+    cursor: pointer;
+  }
+}
+
+.services .contBackMob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .services .contBackMob {
+    display: none;
+  }
+}
+
+.services .sipkaLeft {
+  width: 25px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .services .sipkaLeft {
+    width: 38px;
+    height: 22px;
+    margin-right: 30px;
+  }
+}
+
 .services .scene {
   height: 110px;
   -webkit-perspective: 1000px;
@@ -538,7 +622,16 @@ p {
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 120%;
+}
+
+.services .card__face a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1800px) {
@@ -564,6 +657,21 @@ p {
 .services .is-flipped {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.services #sq_question_1h, .services #sq_question_2h, .services #sq_question_3h, .services #sq_question_1i, .services #sq_question_2i, .services #sq_question_3i, .services #sq_question_1p, .services #sq_question_2p, .services #sq_question_3p {
+  padding: 25% 5%;
+  display: none;
+}
+
+.services #sq_question_1h p, .services #sq_question_2h p, .services #sq_question_3h p, .services #sq_question_1i p, .services #sq_question_2i p, .services #sq_question_3i p, .services #sq_question_1p p, .services #sq_question_2p p, .services #sq_question_3p p {
+  text-align: center;
+}
+
+.services #sq_question_1h p:hover, .services #sq_question_2h p:hover, .services #sq_question_3h p:hover, .services #sq_question_1i p:hover, .services #sq_question_2i p:hover, .services #sq_question_3i p:hover, .services #sq_question_1p p:hover, .services #sq_question_2p p:hover, .services #sq_question_3p p:hover {
+  text-decoration: underline;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media screen and (min-width: 600px) {
