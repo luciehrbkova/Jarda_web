@@ -1116,7 +1116,7 @@ p {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   .only_tablet_reference {
     display: none;
   }
@@ -1144,7 +1144,7 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   .only_pc_reference {
     display: block;
   }
@@ -1154,17 +1154,42 @@ p {
   .only_pc_reference .rb_side {
     font-size: 12px;
   }
-  .only_pc_reference #tab_ref_klient2 {
-    display: block;
+  .only_pc_reference #pc_ref_klient2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 30%;
   }
-  .only_pc_reference #tab_ref_klient3 {
-    display: block;
+  .only_pc_reference #pc_ref_klient3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 40%;
   }
-  .only_pc_reference #tab_ref_klient4 {
-    display: block;
+  .only_pc_reference #pc_ref_klient4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 30%;
+  }
+  .only_pc_reference #pc_ref_klient1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 0%;
+  }
+  .only_pc_reference .reference_arrows {
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+  }
+  .only_pc_reference #pc_ref_left, .only_pc_reference #pc_ref_right {
+    display: none;
+  }
+  .only_pc_reference #pc_ref_middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1172,6 +1197,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 488px;
+  padding-bottom: 50px;
 }
 
 .contact {

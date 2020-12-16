@@ -593,6 +593,7 @@ p
     .reference_paragraph
         padding: 1.75rem 0
         font-size: 0.875em
+        // display: block
     .reference_name
         .ref_name
             font-family: Frank Ruhl Libre
@@ -641,7 +642,7 @@ p
         #tab_ref_klient4
             display: none
             width: 50%
-    @media screen and ( min-width: 600px )
+    @media screen and ( min-width: 1200px )
         display: none
     .reference_arrows
         padding: 10px 180px
@@ -653,23 +654,36 @@ p
         display: flex
 .only_pc_reference
     display: none
-    @media screen and ( min-width: 600px )
+    @media screen and ( min-width: 1200px )
         display: block
         .rb_main
             font-size: 16px
         .rb_side
             font-size: 12px
-        #tab_ref_klient2
-            display: block
+        #pc_ref_klient2
+            display: flex
             width: 30%
-        #tab_ref_klient3
-            display: block
+        #pc_ref_klient3
+            display: flex
             width: 40%
-        #tab_ref_klient4
-            display: block
+        #pc_ref_klient4
+            display: flex
             width: 30%
+        #pc_ref_klient1
+            display: flex
+            width: 0%
+        .reference_arrows
+            padding: 10px
+            width: 200px
+            margin: auto
+        #pc_ref_left, #pc_ref_right
+            display: none
+        #pc_ref_middle
+            display: flex
     .row
         align-items: center
+        height: 488px
+        padding-bottom: 50px
 
 
 // *************** CONTACT *************
