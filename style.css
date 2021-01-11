@@ -363,7 +363,13 @@ p {
 
 @media screen and (min-width: 1200px) {
   .hero_img_box {
-    padding-left: 20%;
+    margin-left: 20%;
+    width: 80%;
+    height: calc( 100vh - 60px);
+    background-image: url("img/hero_pc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
