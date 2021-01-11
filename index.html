@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <!-- ManyChat -->       
     <script src="//widget.manychat.com/110920740663472.js" async="async"></script>
-
     <title>Document</title>
 
 </head>
@@ -74,11 +73,11 @@
                     <div class="navigation_box"></div>
                     <div class="navigation_box"></div>
                     <div class="navigation_box"></div>
-                    <div class="navigation_box"><span class="nav_header color_db"><a href="hypoteky.html">HYPOTÉKY</a></span></div>
-                    <div class="navigation_box"><span class="nav_header color_db"><a href="investice.html">INVESTICE</a></span></div>
-                    <div class="navigation_box"><span class="nav_header color_db"><a href="pojisteni.html">POJIŠTĚNÍ</a></span></div>
-                    <div class="navigation_box"><span class="nav_header color_db"><a href="index.html#news">AKTUALITY</a></span></div>
-                    <div class="navigation_box"><span class="nav_header color_db"><a href="index.html#about">O MNĚ</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="hypoteky.html">HYPOTÉKY</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="investice.html">INVESTICE</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="pojisteni.html">POJIŠTĚNÍ</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="index.html#news">AKTUALITY</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="index.html#about">O MNĚ</a></span></div>
                     <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#reference">REFERENCE</a></span></div>
                     <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#contact">KONTAKT</a></span></div>
                 </div>
@@ -86,7 +85,7 @@
                     <img src="img/hero_mob.jpg" alt="" class="hero_img">
                     <img src="img/hero_pc.jpg" alt="" class="hero_img_pc">
                 </div>
-                <div class="hero_title_cont">
+                <div class="hero_title_cont heroani">
                     <span class="hero_name">JAROSLAV</span>
                     <span class="hero_name surname">BEZOUŠKA</span>
                     <span class="podtitul">Top great amazing Manager</span>
@@ -102,9 +101,9 @@
                 <div class="blue_fringe blue"></div>
                 <div class="down_fringe">
                     <div class="down_box">
-                        <p class="down">Posuňte dolů</p>
+                        <p class="down logoani">Posuňte dolů</p>
                     </div>
-                    <a href="#services"><img src="img/sipka.png" alt="" class="sipka_icon"></a>
+                    <a href="#services"><img src="img/sipka.png" alt="" class="sipka_icon logoani"></a>
                 </div>
             </div>
         </div>
@@ -257,7 +256,7 @@
         <div class="container">
             <div class="fringe"><br><h2>O Mně</h2></div>
             <div class="main">
-                <div class="about__container">
+                <div class="about__container about2">
                     <div class="about__row">
                         <div class="dsk_show">
                             <p class="about__paragraph" >Momentálně pracuji na úplné digitalizaci mých služeb. To pro klienty znamená 
@@ -275,7 +274,7 @@
                                 kvalitní poradenství mezí více klientů. Společně tak můžeme ovlivňovat 
                                 směr, jakým se budou finance ubírat v dalších letech.</p>
                         </div>
-                        <div class="portrait">
+                        <div class="portrait about">
                             <img src="img/portrait.jpg" alt="" >
                         </div>
                 
@@ -287,7 +286,7 @@
                 </div>
 
                 <!-- NUMBERS -->
-                <div class="numbers_container">
+                <div class="numbers_container about3">
                     <div class="numbers light">
                         <div class="numbers_line blue"></div>
                         <span class="numbers_number">180</span>
@@ -693,6 +692,43 @@
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
+        gsap.from(".logoani", {
+            opacity: 0,
+            y: 30,
+            onEnter: '.logoani',
+            duration: 1,
+            stagger: 0.25
+        })
+        gsap.from(".heroani", {
+            x: "-50%",
+            onEnter: '.heroani',
+            duration: 1,
+        })
+
+        var tlAbout = gasp.timeline();
+
+        tlAbout.from(".about", {
+            y: 50,
+            opacity: 0,
+            duration: 1
+        });
+
+        tlAbout.from(".about2", {
+            y: 50,
+            opacity: 0,
+            duration: 1
+        });
+
+        tlAbout.from(".about3", {
+            y: 50,
+            opacity: 0,
+            duration: 1
+        });
+        // gsap.to(".logo", {
+        //     duration: 4, 
+        //     opacity: 1,
+        //     ease: "power1",
+        // });
 
         // gsap
         gsap.registerPlugin(ScrollTrigger);
