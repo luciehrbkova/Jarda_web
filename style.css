@@ -88,6 +88,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   color: #000000;
   font-family: Barlow;
 }
@@ -488,6 +489,10 @@ p {
 .fringe {
   width: 8.5%;
   background: #ffffff;
+}
+
+.pin-spacer {
+  margin: 30px 0 0 0 !important;
 }
 
 .main {

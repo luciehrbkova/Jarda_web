@@ -70,7 +70,7 @@
                 <div class="menu_div home_align margin_bottom">
                     <a href="index.html"><img src="img/home_icon.png" alt="" class="home_icon"></a>
                 </div>
-                <h2>Hypotéky</h2>
+                <h2 class="pin3h">Hypotéky</h2>
             </div>
             <div class="main top_magin_sekce">
                 <!-- ZACIT HYPO -->
@@ -179,7 +179,7 @@
     <!--*********************** CONTACT *************************-->
     <section class="contact">
         <div class="container">
-            <div class="fringe"><br><h2>Kontakt</h2></div>
+            <div class="fringe"><br><h2 class="pin4h">Kontakt</h2></div>
             <div class="main">
                 <div class="contact_container">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
@@ -316,6 +316,43 @@
             opacity: 0,
             y: -70, 
             stagger: 0.5
+        });
+
+        // h2___________________
+       
+        gsap.to('.pin3h', {
+            scrollTrigger: {
+                trigger:'.pin3h',
+                pin: true,
+                start: "top 10%",
+                endTrigger: '.pin4h',
+                id: "pin3h",
+                end: "top 10%",
+                // markers: true,
+                scrub: 1,
+            },
+        });
+        gsap.to('.pin3h', {
+            scrollTrigger: {
+                trigger:'.pin4h',
+                start: "top 35%",
+                end: "top 15%",
+                duration: 0.25,
+                scrub: true,
+            },
+            opacity: 0,
+        });
+        // ____________kontakt
+        gsap.to('.pin4h', {
+            scrollTrigger: {
+                trigger:'.pin4h',
+                pin: true,
+                start: "top 10%",
+                end: "1000px 80%",
+                id: "pin4h",
+                markers: true,
+                scrub: 1,
+            },
         });
 
 

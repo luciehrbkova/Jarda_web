@@ -70,7 +70,7 @@
                 <div class="menu_div home_align margin_bottom">
                     <a href="index.html"><img src="img/home_icon.png" alt="" class="home_icon"></a>
                 </div>
-                <h2>Pojištění</h2>
+                <h2 class="pin3h">Pojištění</h2>
             </div>
             <div class="main top_magin_sekce">
 
@@ -162,7 +162,7 @@
     <!--*********************** CONTACT *************************-->
     <section class="contact">
         <div class="container">
-            <div class="fringe"><br><h2>Kontakt</h2></div>
+            <div class="fringe"><br><h2 class="pin4p">Kontakt</h2></div>
             <div class="main">
                 <div class="contact_container">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
@@ -252,40 +252,80 @@
         </div>
 
     </section>
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script>
-        var card = document.querySelector('.card');
-        card.addEventListener( 'click', function() {
-        card.classList.toggle('is-flipped');
-        });
+        
+         // hypoteky
+        //  gsap.registerPlugin(ScrollTrigger);
+ 
+        //  gsap.from('.aniHypo1', {
+        //      opacity: 0,
+        //      y: -70, 
+        //      stagger: 0.5
+        //  });
+ 
+        //  gsap.from('.aniHypo2', {
+        //      scrollTrigger: {
+        //          trigger:'.aniHypo2',
+        //          toggleActions: "play none none none",
+        //          start: "top center",
+        //          end: "center center",
+        //      },
+        //      opacity: 0,
+        //      y: -70, 
+        //      stagger: 0.5
+        //  });
+ 
+        //  gsap.from('.aniHypo3', {
+        //      scrollTrigger: {
+        //          trigger:'.aniHypo3',
+        //          toggleActions: "play none none none",
+        //          start: "top center",
+        //          end: "center center",
+        //      },
+        //      opacity: 0,
+        //      y: -70, 
+        //      stagger: 0.5
+        //  });
 
-        // var card2 = document.querySelector('#hypo_card');
-        // card2.addEventListener( 'click', function() {
-        // card2.classList.toggle('is-flipped');
-        // });
-
-    //     var elementsBackWhite = document.getElementsByClassName("background_white"); //get all elements
-    // for (var i = 0; i < elementsBackWhite.length; i++)
-    // {
-    //     elementsBackWhite[i].style.backgroundColor = "#000000"
-    // }
-
-        function hypo_quest()
-        {
-           $("#hypo_card").fadeOut(500, function()
-           {
-            $("#hypo_card").html("Jak co nejvýhodněji pořídit investiční nemovitost?").fadeIn(500);
-           });
-
-
-           $("#inv_img_card").toggleClass('is-flipped');
-           
-            // $("#hypo_card").toggle("is-flipped");
-        }
+        // h2___________________
        
-        left.fadeOut(1000, function() 
-                    {
-                        left.html("VÝNOS").fadeIn(1000);
-                    });
+        gsap.to('.pin3h', {
+            scrollTrigger: {
+                trigger:'.pin3h',
+                pin: true,
+                start: "top 15%",
+                endTrigger: '.pin4p',
+                id: "pin3h",
+                end: "top 10%",
+                // markers: true,
+                scrub: 1,
+            },
+        });
+        gsap.to('.pin3h', {
+            scrollTrigger: {
+                trigger:'.pin4p',
+                start: "top 35%",
+                end: "top 15%",
+                duration: 0.25,
+                scrub: true,
+            },
+            opacity: 0,
+        });
+        // ____________kontakt
+        gsap.to('.pin4p', {
+            scrollTrigger: {
+                trigger:'.pin4p',
+                pin: true,
+                start: "top 15%",
+                end: "1000px 80%",
+                id: "pin4p",
+                scrub: 1,
+            },
+        });
+   
     </script>
 
 </body>

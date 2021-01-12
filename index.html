@@ -334,7 +334,7 @@
     <!--*********************** REFERENCE *************************-->
     <section class="reference" id="reference">
         <div class="container">
-            <div class="fringe"><br><h2>Slova mých klientů</h2></div>
+            <div class="fringe"><br><h2 class="pin3">Reference</h2></div>
             <div class="main">
                 <!-- only mobile -->
                 <div class="only_mob_reference">
@@ -595,7 +595,7 @@
     <!--*********************** CONTACT *************************-->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="fringe"><br><h2>Kontakt</h2></div>
+            <div class="fringe"><br><h2 class="pin4">Kontakt</h2></div>
             <div class="main">
                 <div class="contact_container">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
@@ -786,18 +786,87 @@
             stagger: 0.4
         });
         // sections
+        // ____________sluzby
         gsap.to('.pin1', {
             scrollTrigger: {
                 trigger:'.pin1',
                 pin: true,
-                start: "top 10%",
+                start: "top 15%",
                 endTrigger: '.pin2',
                 id: "pin1",
                 end: "top 10%",
                 // markers: true,
-                // scrub: 1,
+                scrub: 1,
             },
         });
+        gsap.to('.pin1', {
+            scrollTrigger: {
+                trigger:'.pin2',
+                start: "top 20%",
+                end: "top 15%",
+                duration: 0.25,
+                scrub: 1,
+            },
+            opacity: 0,
+        });
+        // ____________o mne
+        gsap.to('.pin2', {
+            scrollTrigger: {
+                trigger:'.pin2',
+                pin: true,
+                start: "top 15%",
+                endTrigger: '.pin3',
+                id: "pin2",
+                end: "top 15%",
+                // markers: true,
+                scrub: 1,
+            },
+        });
+        gsap.to('.pin2', {
+            scrollTrigger: {
+                trigger:'.pin3',
+                start: "top 20%",
+                end: "top 5%",
+                duration: 0.25,
+                scrub: 1,
+            },
+            opacity: 0,
+        });
+        // ____________reference
+        gsap.to('.pin3', {
+            scrollTrigger: {
+                trigger:'.pin3',
+                pin: true,
+                start: "top 15%",
+                endTrigger: '.pin4',
+                id: "pin3",
+                end: "top 10%",
+                // markers: true,
+                scrub: 1,
+            },
+        });
+        gsap.to('.pin3', {
+            scrollTrigger: {
+                trigger:'.pin4',
+                start: "top 20%",
+                end: "top 15%",
+                duration: 0.25,
+                scrub: 1,
+            },
+            opacity: 0,
+        });
+        // ____________kontakt
+        gsap.to('.pin4', {
+            scrollTrigger: {
+                trigger:'.pin4',
+                pin: true,
+                start: "top 15%",
+                end: "1000px 80%",
+                id: "pin4",
+                scrub: 1,
+            },
+        });
+      
 
            
 
