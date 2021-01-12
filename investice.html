@@ -83,16 +83,16 @@
                                 <h4>Jak začít investovat?</h4>
                             </div>
                         </div>
-                        <div class="invest_img">
+                        <div class="invest_img aniHypo1">
                             <img src="img/invest1.png" alt="">
                         </div>
                     </div>
                     <div class="vyhoda_container">
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo1">
                             <span class="vyhoda_header">VÝHODA</span>
                             <div class="vyhoda_text light">První pozitivní věcí je Váš  zájem  o informace. Protože nemáte zkušenosti, informacemi to také začíná. Výhoda je v možnosti testovacího nastavení. Získáte tak důvěru v investiční nástroje a nadšení pro jejich další využívání.</div>
                         </div>
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo1">
                             <span class="vyhoda_header">ŘEŠENÍ</span>
                             <div class="vyhoda_text grey">Klientům začátečníkům nejprve vysvětlím zákadní principy investování. Poté stanovíme investiční cíle (na co chcete zhodnocené úspory použít). Jakmile nabydeme dojmu, že problematice rozumíte, začneme tvořit řešení, jak, kam a kolik peněz zainvestovat za konkrétním clem. To vše bude součástí Vašeho komplexního finančního plánu.</div>
                         </div>
@@ -111,16 +111,16 @@
                                 <h4>Jsou mé investice správně nastavené?</h4>
                             </div>
                         </div>
-                        <div class="invest_img no_left">
+                        <div class="invest_img no_left aniHypo2">
                             <img src="img/invest2.png" alt="">
                         </div>
                     </div>
                     <div class="vyhoda_container">
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo2">
                             <span class="vyhoda_header">VÝHODA</span>
                             <div class="vyhoda_text light">Díky tomu že své investice bude v čase aktualizovat budete také snižovat jejich nákladovost (například v podobě nižších průběžných poplatků ). Daleko důležitější však je zajistit, aby vaše investice flexibilně reagovala na vývoj finančního trhu. Minimalizujete tak ztráty a maximalizujete výnos.</div>
                         </div>
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo2">
                             <span class="vyhoda_header">ŘEŠENÍ</span>
                             <div class="vyhoda_text grey">Na osobní schůzce se spolu podíváme jak vaše aktualní nastavení investici koresponduje s vašimi cíli. Následně zkontrolujeme vhodnost nastavení vašeho portfolia. Bude-li to třeba, navrhnu vám možnosti úprav portfolia za cílem zefektivnění investic.</div>
                         </div>
@@ -139,16 +139,16 @@
                                 <h4>Investice pro pokročilé</h4>
                             </div>
                         </div>
-                        <div class="invest_img">
+                        <div class="invest_img aniHypo3">
                             <img src="img/invest3.png" alt="">
                         </div>
                     </div>
                     <div class="vyhoda_container">
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo3">
                             <span class="vyhoda_header">VÝHODA</span>
                             <div class="vyhoda_text light">Díky Vašim zkušenostem se nabízí možnost bezpečně využívat mnohem sofistikovanější nastavení Vašeho investičního portfolia. Klienti, kteří již pravidelně investují, disponují větším kapitálem a díky tomu mohou využívat některé z prémiových produktů, které trh nabízí. Hlavní výhodou je potom bonusové zhodnocení.</div>
                         </div>
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo3">
                             <span class="vyhoda_header">ŘEŠENÍ</span>
                             <div class="vyhoda_text grey">Důležité je pomocí komplexní analýzy maximalizovat využití Vašich volných financí a na základě toho vytvořit plán na míru.  Důraz se klade především na nákladovost a potenciál zhodnocení.Díky kombinaci současného finančního majetku, a možnosti propojení více produktů, se Vám otevírají dveře do světa prémiových investic.</div>
                         </div>
@@ -261,41 +261,44 @@
         </div>
 
     </section>
-    <script>
-        var card = document.querySelector('.card');
-        card.addEventListener( 'click', function() {
-        card.classList.toggle('is-flipped');
-        });
-
-        // var card2 = document.querySelector('#hypo_card');
-        // card2.addEventListener( 'click', function() {
-        // card2.classList.toggle('is-flipped');
-        // });
-
-    //     var elementsBackWhite = document.getElementsByClassName("background_white"); //get all elements
-    // for (var i = 0; i < elementsBackWhite.length; i++)
-    // {
-    //     elementsBackWhite[i].style.backgroundColor = "#000000"
-    // }
-
-        function hypo_quest()
-        {
-           $("#hypo_card").fadeOut(500, function()
-           {
-            $("#hypo_card").html("Jak co nejvýhodněji pořídit investiční nemovitost?").fadeIn(500);
-           });
-
-
-           $("#inv_img_card").toggleClass('is-flipped');
-           
-            // $("#hypo_card").toggle("is-flipped");
-        }
-       
-        left.fadeOut(1000, function() 
-                    {
-                        left.html("VÝNOS").fadeIn(1000);
-                    });
-    </script>
+     <!-- greensock -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+     <script>
+         // hypoteky
+         gsap.registerPlugin(ScrollTrigger);
+ 
+         gsap.from('.aniHypo1', {
+             opacity: 0,
+             y: -70, 
+             stagger: 0.5
+         });
+ 
+         gsap.from('.aniHypo2', {
+             scrollTrigger: {
+                 trigger:'.aniHypo2',
+                 toggleActions: "play none none none",
+                 start: "top center",
+                 end: "center center",
+             },
+             opacity: 0,
+             y: -70, 
+             stagger: 0.5
+         });
+ 
+         gsap.from('.aniHypo3', {
+             scrollTrigger: {
+                 trigger:'.aniHypo3',
+                 toggleActions: "play none none none",
+                 start: "top center",
+                 end: "center center",
+             },
+             opacity: 0,
+             y: -70, 
+             stagger: 0.5
+         });
+        </script>
+    
 
 </body>
 </html>

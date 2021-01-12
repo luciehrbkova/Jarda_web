@@ -81,7 +81,7 @@
                     <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#reference">REFERENCE</a></span></div>
                     <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#contact">KONTAKT</a></span></div>
                 </div>
-                <div class="hero_img_box">
+                <div class="hero_img_box heroani2">
                     <img src="img/hero_mob.jpg" alt="" class="hero_img">
                     <!-- <img src="img/hero_pc.jpg" alt="" class="hero_img_pc"> -->
                 </div>
@@ -111,7 +111,7 @@
     <!--*********************** SERVICES *************************-->
     <section class="services" id="services">
         <div class="container">
-            <div class="fringe"><br><h2>Služby</h2></div>
+            <div class="fringe"><br><h2 class="pin1">Služby</h2></div>
             <div class="main">
                 <div class="grid row">
                     <div class="mobile_hidden">
@@ -155,7 +155,7 @@
                          <!-- question 2 -->
                         <div class="square scene">
                             <div class="card" onclick="inv_quest()">
-                                <div class="card__face card__face--front">
+                                <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_2">INVESTICE</h3>
                                     <a href="hypoteky.html#hypo_invest" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
                                     <a href="investice.html#advanced_invest" id="sq_question_2i"><p>Investice pro pokročilé</p></a>
@@ -193,8 +193,8 @@
                         <!-- question 1 -->
                         <div class="square light scene">
                             <div class="card" id="hypo_card" onclick="hypo_quest()">
-                                <div class="card__face card__face--front">
-                                    <h3 id="sq_header_1">HYPOTÉKY</h3>
+                                <div class="card__face card__face--front theme">
+                                    <h3 id="sq_header_1" >HYPOTÉKY</h3>
                                     <a href="hypoteky.html" id="sq_question_1h"><p>Jak získat svoji první hypotéku?</p></a>
                                     <a href="investice.html#zacit_investovat" id="sq_question_1i"><p>Začínám investovat</p></a>
                                     <a href="pojisteni.html" id="sq_question_1p"><p>Životní Pojištění</p></a>
@@ -211,7 +211,7 @@
                         <!-- question 3 -->
                         <div class="square light scene">
                             <div class="card" onclick="poj_quest()">
-                                <div class="card__face card__face--front">
+                                <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_3">POJIŠTĚNÍ</h3>
                                     <a href="hypoteky.html#hypo_zlevnit" id="sq_question_3h"><p>Jak zlevnit nebo předčasně splatit stávající hypotéku?</p></a>
                                     <a href="investice.html#middle_invest" id="sq_question_3i"><p>Jsou mé investice správně nastaveny?</p></a>
@@ -254,9 +254,9 @@
     <!--*********************** ABOUT *************************-->
     <section class="about" id="about">
         <div class="container">
-            <div class="fringe"><br><h2>O Mně</h2></div>
+            <div class="fringe"><br><h2 class="pin2">O Mně</h2></div>
             <div class="main">
-                <div class="about__container about2">
+                <div class="about__container aniAbout">
                     <div class="about__row">
                         <div class="dsk_show">
                             <p class="about__paragraph" >Momentálně pracuji na úplné digitalizaci mých služeb. To pro klienty znamená 
@@ -274,7 +274,7 @@
                                 kvalitní poradenství mezí více klientů. Společně tak můžeme ovlivňovat 
                                 směr, jakým se budou finance ubírat v dalších letech.</p>
                         </div>
-                        <div class="portrait about">
+                        <div class="portrait aniAbout">
                             <img src="img/portrait.jpg" alt="" >
                         </div>
                 
@@ -691,7 +691,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+        gsap.registerPlugin(ScrollTrigger);
+        // heropage ani
         gsap.from(".logoani", {
             opacity: 0,
             y: 30,
@@ -700,30 +710,120 @@
             stagger: 0.25
         })
         gsap.from(".heroani", {
-            x: "-50%",
+            x: "-20%",
             onEnter: '.heroani',
             duration: 1,
         })
+        gsap.from(".heroani2", {
+            onEnter: '.heroani2',
+            opacity: 0.5,
+            duration: 1,
+            x: 30,
+        })
+        // services
 
-        var tlAbout = gasp.timeline();
-
-        tlAbout.from(".about", {
-            y: 50,
-            opacity: 0,
-            duration: 1
+        gsap.from(".square", 1, {
+            scrollTrigger:{
+                trigger: ".grid",
+                start: "top center",
+                id: 'grid',
+                // markers: true,
+            },
+            scaleY: 0,
+            // scale: 0, 
+            // y: 60,
+            // yoyo: true, 
+            // repeat: -1, 
+            ease: "power1.inOut",
+            // delay: 0.25,
+            stagger: {
+            amount: 1, 
+            grid: "auto",
+            from: "top"
+            }
         });
 
-        tlAbout.from(".about2", {
-            y: 50,
+        // about
+        gsap.from('.aniAbout', {
+            scrollTrigger: {
+                trigger:'.aniAbout',
+                toggleActions: "play none none none",
+                start: "top 60%",
+                // end: "center center",
+                // markers: true,
+                // scrub: 1,
+            },
             opacity: 0,
-            duration: 1
+            y: 30, 
+            // stagger: 0.4
+        });
+        // uspechy
+        CSSPlugin.defaultTransformPerspective = 400; 
+        gsap.from(".numbers", {
+            scrollTrigger: {
+                trigger:'.numbers',
+                toggleActions: "play none none none",
+                start: "top 70%",
+                // scrub: 1,
+            },
+            opacity:0,
+            duration: 0.3, 
+            rotationX: 180,
+            stagger: 0.25,
+        });
+        // diplomy
+        gsap.from('.diplom', {
+            scrollTrigger: {
+                trigger:'.diplom',
+                toggleActions: "play none none none",
+                start: "top 60%",
+                // end: "center center",
+                // markers: true,
+                // scrub: 1,
+            },
+            opacity: 0,
+            y: 30, 
+            stagger: 0.4
+        });
+        // sections
+        gsap.to('.pin1', {
+            scrollTrigger: {
+                trigger:'.pin1',
+                pin: true,
+                start: "top 10%",
+                endTrigger: '.pin2',
+                id: "pin1",
+                end: "top 10%",
+                // markers: true,
+                // scrub: 1,
+            },
         });
 
-        tlAbout.from(".about3", {
-            y: 50,
-            opacity: 0,
-            duration: 1
-        });
+           
+
+
+
+        // var tlAbout = gasp.timeline();
+
+        // tlAbout.from(".about", {
+        //     y: 50,
+        //     opacity: 0,
+        //     duration: 1
+        // });
+
+        // tlAbout.from(".about2", {
+        //     y: 50,
+        //     opacity: 0,
+        //     duration: 1
+        // });
+
+        // tlAbout.from(".about3", {
+        //     y: 50,
+        //     opacity: 0,
+        //     duration: 1
+        // });
+
+        
         // gsap.to(".logo", {
         //     duration: 4, 
         //     opacity: 1,
@@ -731,16 +831,15 @@
         // });
 
         // gsap
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".header2", {
-            ScrollTrigger: {
-                trigger: ".h2",
-                start: "bottom 5%",
-                markers: true,
-                toggleActions: "restart pause restart pause"
-            },
-            x: 200,
-        });
+        // gsap.to(".header2", {
+        //     ScrollTrigger: {
+        //         trigger: ".h2",
+        //         start: "bottom 5%",
+        //         markers: true,
+        //         toggleActions: "restart pause restart pause"
+        //     },
+        //     x: 200,
+        // });
 
         // var card2 = document.querySelector('#hypo_card');
         // card2.addEventListener( 'click', function() {
@@ -863,6 +962,8 @@
             // question 1 + 2 + 3_________________
             $("#sq_header_1, #sq_header_2, #sq_header_3").fadeOut(500, function()
            {
+            $("#sq_question_1p, #sq_question_2p, #sq_question_3p").hide();
+            $("#sq_question_1i, #sq_question_2i, #sq_question_3i").hide();
             $("#sq_question_1h, #sq_question_2h, #sq_question_3h").fadeIn(500);
            });
    
@@ -883,6 +984,8 @@
            // question 1 + 2 + 3_________________
            $("#sq_header_1, #sq_header_2, #sq_header_3").fadeOut(function()
            {
+            $("#sq_question_1p, #sq_question_2p, #sq_question_3p").hide();
+            $("#sq_question_1h, #sq_question_2h, #sq_question_3h").hide();
             $("#sq_question_1i, #sq_question_2i, #sq_question_3i").fadeIn(500);
            });
 
@@ -903,6 +1006,8 @@
            // question 1 + 2 + 3_________________
            $("#sq_header_1, #sq_header_2, #sq_header_3").fadeOut(500, function()
            {
+            $("#sq_question_1h, #sq_question_2h, #sq_question_3h").hide();
+            $("#sq_question_1i, #sq_question_2i, #sq_question_3i").hide();
             $("#sq_question_1p, #sq_question_2p, #sq_question_3p").fadeIn(500);
            });
 
