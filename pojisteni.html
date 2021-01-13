@@ -133,15 +133,15 @@
                 <div class="pojisteni_cont">
                     <div class="pojisteni_top_box row_tab">
                         <div class="header_box">
-                            <h4>Pojištění Auta</h4>
-                            <span class="header_parag"><p>Jednoduché a rychlé srovnání ceny a kvality pojištění vašeho auta</p></span>
+                            <h4 class="part1c">Pojištění Auta</h4>
+                            <span class="header_parag"><p class="part1c">Jednoduché a rychlé srovnání ceny a kvality pojištění vašeho auta</p></span>
                         </div>
                         <div class="img_box">
-                            <div class="img_wrap"><img src="img/poj2.jpg" alt=""></div>
+                            <div class="img_wrap part2c"><img src="img/poj2.jpg" alt=""></div>
                             <!-- <div class="blue_stripe"></div> -->
                         </div>
                     </div>
-                    <div class="poj_text">Při porovnání všech “autopojištění” na trhu doporučuji sledovat nejen nízkou cenu ale i například limity povinného ručení, funkci a možnosti připojištění jako je pojištění skel a asistentce. Nejnižší cena by neměla být vždy jediný ukazatel dobrého pojištění.
+                    <div class="poj_text part2c">Při porovnání všech “autopojištění” na trhu doporučuji sledovat nejen nízkou cenu ale i například limity povinného ručení, funkci a možnosti připojištění jako je pojištění skel a asistentce. Nejnižší cena by neměla být vždy jediný ukazatel dobrého pojištění.
                     </div>
                     <div class="button_box">
                         <button class="green_button button_move_l button_move_down">SPOČÍTEJ</button>
@@ -296,6 +296,31 @@
             x: 80,
         })
         .from('.part3b', {
+            opacity: 0,
+            duration: 0.3,
+            y: 30,
+        })
+
+        // timeline 3
+        var pojisteniTimeline3 = gsap.timeline({
+            scrollTrigger:{
+                trigger: '.part1c',
+                start: "top 50%",
+            }
+        });
+        pojisteniTimeline2
+        .from('.part1c', {
+
+            opacity: 0,
+            duration: 0.3,
+            y: 30,
+        })
+        .from('.part2c', {
+            opacity: 0,
+            duration: 0.3,
+            x: 80,
+        })
+        .from('.part3c', {
             opacity: 0,
             duration: 0.3,
             y: 30,
