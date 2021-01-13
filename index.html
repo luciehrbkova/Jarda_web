@@ -27,7 +27,7 @@
                             <ul>
                                 <li onclick="closeNav()"><a href="index.html">Domů</a></li>
                                 <li onclick="closeNav()"><a href="index.html#services">Služby</a></li>
-                                <li onclick="closeNav()"><a href="index.html#news">Aktuality</a></li>
+                                <!-- <li onclick="closeNav()"><a href="index.html#news">Aktuality</a></li> -->
                                 <li onclick="closeNav()"><a href="index.html#about">O mně</a></li>
                                 <li onclick="closeNav()"><a href="index.html#reference">Reference</a></li>
                                 <li onclick="closeNav()"><a href="index.html#contact">Kontakt</a></li>
@@ -73,10 +73,11 @@
                     <div class="navigation_box"></div>
                     <div class="navigation_box"></div>
                     <div class="navigation_box"></div>
+                    <!-- aktuality -->
+                    <div class="navigation_box logoani"><span class="nav_header color_db"></div> 
                     <div class="navigation_box logoani"><span class="nav_header color_db"><a href="hypoteky.html">HYPOTÉKY</a></span></div>
                     <div class="navigation_box logoani"><span class="nav_header color_db"><a href="investice.html">INVESTICE</a></span></div>
                     <div class="navigation_box logoani"><span class="nav_header color_db"><a href="pojisteni.html">POJIŠTĚNÍ</a></span></div>
-                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="index.html#news">AKTUALITY</a></span></div>
                     <div class="navigation_box logoani"><span class="nav_header color_db"><a href="index.html#about">O MNĚ</a></span></div>
                     <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#reference">REFERENCE</a></span></div>
                     <div class="navigation_box blue"><span class="nav_header color_w"><a href="index.html#contact">KONTAKT</a></span></div>
@@ -88,7 +89,7 @@
                 <div class="hero_title_cont heroani">
                     <span class="hero_name">JAROSLAV</span>
                     <span class="hero_name surname">BEZOUŠKA</span>
-                    <span class="podtitul">Top great amazing Manager</span>
+                    <span class="podtitul">Oblastní Manager</span>
                     <button class="green_button">CHCI VÍCE INFO</button>
 
                 </div>
@@ -101,7 +102,7 @@
                 <div class="blue_fringe blue"></div>
                 <div class="down_fringe">
                     <div class="down_box">
-                        <p class="down logoani">Posuňte dolů</p>
+                        <p class="down logoani">Služby</p>
                     </div>
                     <a href="#services"><img src="img/sipka.png" alt="" class="sipka_icon logoani"></a>
                 </div>
@@ -325,7 +326,7 @@
                         <img src="img/diplom2.jpg" alt="" >
                     </div>
                 </div>
-                <button class="green_button">CHCI VÍCE INFO</button>
+                <button class="green_button aniButton">CHCI VÍCE INFO</button>
             </div>
             <div class="fringe"></div>
         </div>
@@ -337,7 +338,7 @@
             <div class="fringe"><br><h2 class="pin3">Reference</h2></div>
             <div class="main">
                 <!-- only mobile -->
-                <div class="only_mob_reference">
+                <div class="only_mob_reference aniRef">
                     <!-- klient 1 -->
                     <div id="mob_ref_klient1">
                         <div class="reference_box">
@@ -444,7 +445,7 @@
 
 
                 <!-- ONLY TABLET************************************* -->
-                <div class="only_tablet_reference">
+                <div class="only_tablet_reference aniRef">
                     <div class="row"> 
                         <!-- klient 1 -->
                         <div id="tab_ref_klient1">
@@ -549,8 +550,8 @@
                 </div>
 
 
-                <!-- ONLY TABLET************************************* -->
-                <div class="only_pc_reference">
+                <!-- ONLY PC************************************* -->
+                <div class="only_pc_reference aniRef">
                     <div class="row"> 
 
                         
@@ -597,7 +598,7 @@
         <div class="container">
             <div class="fringe"><br><h2 class="pin4">Kontakt</h2></div>
             <div class="main">
-                <div class="contact_container">
+                <div class="contact_container aniContact">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
                         <label for="jmeno">Jméno</label><br>
                         <input type="text" id="jmeno" name="name" required><div class="required"></div>
@@ -611,7 +612,7 @@
                         <input type="submit" value="ODESLAT" class="submit">
                     </form>
                 </div>
-                <div class="map_contactdata">
+                <div class="map_contactdata aniContact">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.655259546002!2d14.
                     440297115609647!3d50.092741020955835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470
                     b94bc6a8b5901%3A0xe6bfb36220f7bd9f!2zUG9ixZllxb5uw60gMjAsIDE4NiAwMCBLYXJsw61uLCDEjGVza28!5e0
@@ -656,7 +657,7 @@
                         <ul>
                             <li><a href="index.html">Domů</a></li>
                             <li><a href="index.html#services">Služby</a></li>
-                            <li><a href="index.html#news">Aktuality</a></li>
+                            <!-- <li><a href="index.html#news">Aktuality</a></li> -->
                             <li><a href="index.html#about">O mně</a></li>
                             <li><a href="index.html#reference">Reference</a></li>
                             <li><a href="index.html#contact">Kontakt</a></li>
@@ -748,10 +749,7 @@
             scrollTrigger: {
                 trigger:'.aniAbout',
                 toggleActions: "play none none none",
-                start: "top 60%",
-                // end: "center center",
-                // markers: true,
-                // scrub: 1,
+                start: "top 70%",
             },
             opacity: 0,
             y: 30, 
@@ -763,7 +761,7 @@
             scrollTrigger: {
                 trigger:'.numbers',
                 toggleActions: "play none none none",
-                start: "top 70%",
+                start: "top 80%",
                 // scrub: 1,
             },
             opacity:0,
@@ -777,13 +775,42 @@
                 trigger:'.diplom',
                 toggleActions: "play none none none",
                 start: "top 60%",
-                // end: "center center",
-                // markers: true,
-                // scrub: 1,
             },
             opacity: 0,
             y: 30, 
             stagger: 0.4
+        });
+        // button esase in
+        gsap.from('.aniButton', {
+            scrollTrigger: {
+                trigger:'.aniButton',
+                toggleActions: "play none none none",
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 30, 
+        });
+        // reference esase in
+        gsap.from('.aniRef', {
+            scrollTrigger: {
+                trigger:'.aniRef',
+                toggleActions: "play none none none",
+                start: "top 70%",
+            },
+            duration: 1,
+            opacity: 0,
+            y: 50, 
+        });
+        // kontakt esase in
+        gsap.from('.aniContact', {
+            scrollTrigger: {
+                trigger:'.aniContact',
+                toggleActions: "play none none none",
+                start: "top 40%",
+            },
+            // duration: 1,
+            opacity: 0,
+            y: 50, 
         });
         // sections
         // ____________sluzby
