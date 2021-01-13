@@ -173,7 +173,7 @@
         <div class="container">
             <div class="fringe"><br><h2 class="pin4h">Kontakt</h2></div>
             <div class="main">
-                <div class="contact_container">
+                <div class="contact_container aniContact">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
                         <label for="jmeno">Jméno</label><br>
                         <input type="text" id="jmeno" name="name" required><div class="required"></div>
@@ -187,7 +187,7 @@
                         <input type="submit" value="ODESLAT" class="submit">
                     </form>
                 </div>
-                <div class="map_contactdata">
+                <div class="map_contactdata aniContact">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.655259546002!2d14.
                     440297115609647!3d50.092741020955835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470
                     b94bc6a8b5901%3A0xe6bfb36220f7bd9f!2zUG9ixZllxb5uw60gMjAsIDE4NiAwMCBLYXJsw61uLCDEjGVza28!5e0
@@ -332,6 +332,17 @@
                 id: "pin4h",
                 scrub: 1,
             },
+        });
+        // kontakt esase in
+        gsap.from('.aniContact', {
+        scrollTrigger: {
+            trigger:'.aniContact',
+            toggleActions: "play none none none",
+            start: "top 60%",
+        },
+        // duration: 1,
+        opacity: 0,
+        y: 50, 
         });
         </script>
     
