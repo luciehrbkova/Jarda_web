@@ -88,6 +88,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   color: #000000;
   font-family: Barlow;
 }
@@ -363,7 +364,13 @@ p {
 
 @media screen and (min-width: 1200px) {
   .hero_img_box {
-    padding-left: 20%;
+    margin-left: 20%;
+    width: 80%;
+    height: calc( 100vh - 90px);
+    background-image: url("img/hero_pc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -464,6 +471,18 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .surname {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .surname {
+    font-size: 3.75rem;
+  }
+}
+
 .podtitul {
   font-weight: 200;
   letter-spacing: 0.3px;
@@ -482,6 +501,10 @@ p {
 .fringe {
   width: 8.5%;
   background: #ffffff;
+}
+
+.pin-spacer {
+  margin: 30px 0 0 0 !important;
 }
 
 .main {
@@ -706,6 +729,18 @@ p {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 3px;
+}
+
+.services .theme:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #ffffff;
+}
+
+.services .theme:hover h3 {
+  font-size: 1.30rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 600px) {
@@ -1738,6 +1773,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 9%;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1845,6 +1881,7 @@ p {
         align-self: flex-start;
     padding-top: 80px;
     padding-right: 5%;
+    background: red;
   }
 }
 
@@ -1865,6 +1902,12 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .pojisteni_cont .header_parag p {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
   .pojisteni_cont .header_parag p {
     font-size: 1.25rem;
   }
@@ -1925,9 +1968,15 @@ p {
     margin-left: 10%;
     z-index: 10;
     position: relative;
-    margin-top: -400px;
+    margin-top: -350px;
     padding: 3% 5%;
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .pojisteni_cont .poj_text {
+    margin-top: -400px;
   }
 }
 

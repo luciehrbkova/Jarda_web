@@ -70,7 +70,7 @@
                 <div class="menu_div home_align margin_bottom">
                     <a href="index.html"><img src="img/home_icon.png" alt="" class="home_icon"></a>
                 </div>
-                <h2>Hypotéky</h2>
+                <h2 class="pin3h">Hypotéky</h2>
             </div>
             <div class="main top_magin_sekce">
                 <!-- ZACIT HYPO -->
@@ -83,18 +83,18 @@
                                 <h4>Jak získat svojí první hypotéku?</h4>
                             </div>
                         </div>
-                        <div class="invest_img">
+                        <div class="invest_img aniHypo1">
                             <img src="img/hypo1.jpg" alt="">
                         </div>
                     </div>
                     <div class="vyhoda_container">
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo1">
                             <span class="vyhoda_header">VÝHODA</span>
                             <div class="vyhoda_text light">V případě první hypotéky může být Vaše “eso v rukávu” Nízká zaúvěrovanost. Při nízke zaúvěrovanosti klienta je vyšší pravděpodobnost dosažení úvěru.
                                 <br><br>
                                 Mladí jedinci, či páry, mají navíc velkou výhodu při nastavování hypotéky, protože si můžou dovolit delší splatnost a tudíž i nejnižší  splátku.</div>
                         </div>
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo1">
                             <span class="vyhoda_header">ŘEŠENÍ</span>
                             <div class="vyhoda_text grey">Sestavím pro vás finanční plán, díky kterému budete přesně vědět, jaké možnosti máte. Společně tak vymyslíme to nejlepší řešení pro koupi Vašeho vysněného bydlení.
                                 <br><br>
@@ -118,16 +118,16 @@
                                 <h4>Jak zlevnit nebo předčasně splatit stávající hypotéku?</h4>
                             </div>
                         </div>
-                        <div class="invest_img no_left">
+                        <div class="invest_img no_left aniHypo2">
                             <img src="img/hypo2.jpg" alt="">
                         </div>
                     </div>
                     <div class="vyhoda_container">
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo2">
                             <span class="vyhoda_header">VÝHODA</span>
                             <div class="vyhoda_text light">V dnešní době jsou hypotéky mnohem flexibilnější než kdy dřív.V praxi to přináší mnoho výhod. Jednou z největších výhod je možnost naplánovat předčasné splacení hypotéky tak, aby nezatížilo Vás rodinný rozpočet. Výdaje na bydlení jsou stejné, ale hypotéka je o několik let dříve splacená. </div>
                         </div>
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo2">
                             <span class="vyhoda_header">ŘEŠENÍ</span>
                             <div class="vyhoda_text grey">Řešení je poměrně sofistikované nastavení počátečních parametrů nové, nebo refinancované hypotéky. V kombinací s investičním plánováním tam dosahuji s klienty maximálního efektu při využití jejich finančních zdrojů s minimální dopadem na jejich cashflow.</div>
                         </div>
@@ -146,16 +146,16 @@
                                 <h4>Jak nejvýhodněji financovat nákup  investiční nemovitosti?</h4>
                             </div>
                         </div>
-                        <div class="invest_img">
+                        <div class="invest_img aniHypo3">
                             <img src="img/hypo3.jpg" alt="">
                         </div>
                     </div>
                     <div class="vyhoda_container">
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo3">
                             <span class="vyhoda_header">VÝHODA</span>
                             <div class="vyhoda_text light">Mezi hlavní výhody financování investiční nemovitosti hypotékou na rozdíl od koupě z vlastních zdrojů patří například  ponechání si finannčí rezervy (možnost zhodnocovat finanční rezervu lépe s vyšším plusovým úrokem nez je úrok u hypotéky)</div>
                         </div>
-                        <div class="vyhoda_box">
+                        <div class="vyhoda_box aniHypo3">
                             <span class="vyhoda_header">ŘEŠENÍ</span>
                             <div class="vyhoda_text grey">Na osobní schůzce probereme a společně zvážíme všechny pro a proti. Sestavím vám finanční plán na míru, s kterým získáte bezpečí pro váš majetek
                                 Díky finančnímu plánu budete už dopředu přesně znát návratnost a výnosnost Vaší investice.</div>
@@ -179,7 +179,7 @@
     <!--*********************** CONTACT *************************-->
     <section class="contact">
         <div class="container">
-            <div class="fringe"><br><h2>Kontakt</h2></div>
+            <div class="fringe"><br><h2 class="pin4h">Kontakt</h2></div>
             <div class="main">
                 <div class="contact_container">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
@@ -269,11 +269,100 @@
         </div>
 
     </section>
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script>
+        // hypoteky
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.aniHypo1', {
+            // scrollTrigger: {
+                // trigger:'.aniHypo1',
+                // toggleActions: "play none none none",
+                // start: "50% 40%",
+                // end: "center center",
+                // markers: true,
+                // scrub: 1,
+            // },
+            opacity: 0,
+            y: -70, 
+            stagger: 0.5
+        });
+
+        gsap.from('.aniHypo2', {
+            scrollTrigger: {
+                trigger:'.aniHypo2',
+                toggleActions: "play none none none",
+                start: "top center",
+                end: "center center",
+                // markers: true,
+                // scrub: 1,
+            },
+            opacity: 0,
+            y: -70, 
+            stagger: 0.5
+        });
+
+        gsap.from('.aniHypo3', {
+            scrollTrigger: {
+                trigger:'.aniHypo3',
+                toggleActions: "play none none none",
+                start: "top center",
+                end: "center center",
+                markers: true,
+                // scrub: 1,
+            },
+            opacity: 0,
+            y: -70, 
+            stagger: 0.5
+        });
+
+        // h2___________________
+       
+        gsap.to('.pin3h', {
+            scrollTrigger: {
+                trigger:'.pin3h',
+                pin: true,
+                start: "top 10%",
+                endTrigger: '.pin4h',
+                id: "pin3h",
+                end: "top 10%",
+                // markers: true,
+                scrub: 1,
+            },
+        });
+        gsap.to('.pin3h', {
+            scrollTrigger: {
+                trigger:'.pin4h',
+                start: "top 35%",
+                end: "top 15%",
+                duration: 0.25,
+                scrub: true,
+            },
+            opacity: 0,
+        });
+        // ____________kontakt
+        gsap.to('.pin4h', {
+            scrollTrigger: {
+                trigger:'.pin4h',
+                pin: true,
+                start: "top 10%",
+                end: "1000px 80%",
+                id: "pin4h",
+                markers: true,
+                scrub: 1,
+            },
+        });
+
+
+
         var card = document.querySelector('.card');
         card.addEventListener( 'click', function() {
         card.classList.toggle('is-flipped');
         });
+
+
 
         // var card2 = document.querySelector('#hypo_card');
         // card2.addEventListener( 'click', function() {
