@@ -422,7 +422,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .hero_title_cont {
-    width: 33.2vw;
+    max-width: 33.2vw;
     padding: 80px 60px;
   }
 }
