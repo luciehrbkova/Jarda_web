@@ -69,7 +69,7 @@
                 <div class="menu_div home_align margin_bottom">
                     <a href="index.html"><img src="img/home_icon.png" alt="" class="home_icon"></a>
                 </div>
-                <h2>GDPR</h2>
+                <h2 class="pin3p">GDPR</h2>
             </div>
             <div class="main top_magin_gdpr">
                     <!-- <h3>Zásady zpracování osobních údajů</h3> -->
@@ -170,7 +170,7 @@
         </div>
     </section>
 
-
+    <h2 class="pin4p"></h2>
 
 
 
@@ -217,7 +217,25 @@
         </div>
 
     </section>
-    <script>
+   <!-- greensock -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+   <script>
+       // h2___________________
+       
+       gsap.to('.pin3p', {
+            scrollTrigger: {
+                trigger:'.pin3p',
+                pin: true,
+                start: "top 15%",
+                endTrigger: '.pin4p',
+                id: "pin3p",
+                end: "top 30%",
+                markers: true,
+                scrub: 1,
+            },
+        });
+
     </script>
 
 </body>

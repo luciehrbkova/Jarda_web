@@ -555,6 +555,18 @@ p {
   height: 100vh;
 }
 
+@media screen and (min-width: 600px) {
+  .services {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    height: 100vh;
+  }
+}
+
 .services .grid {
   min-width: 100%;
   display: -webkit-box;
@@ -801,7 +813,6 @@ p {
 
 .about {
   width: 100%;
-  margin-top: 150px;
 }
 
 .about .main {
@@ -1034,7 +1045,6 @@ p {
 
 .reference {
   width: 100%;
-  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -1238,7 +1248,6 @@ p {
 
 .contact {
   width: 100%;
-  margin-top: 100px;
 }
 
 .contact .main {
@@ -1580,6 +1589,10 @@ p {
   }
 }
 
+.investice .pin-spacer {
+  margin: 60px 0 0 0 !important;
+}
+
 .hypoteky .green_button {
   margin-top: 30px;
   margin-bottom: 80px;
@@ -1605,6 +1618,10 @@ p {
   .hypoteky .button_move_left {
     margin-left: calc( 50% - 160px);
   }
+}
+
+.hypoteky .pin-spacer {
+  margin: 60px 0 0 0 !important;
 }
 
 .third_container {
@@ -1822,6 +1839,10 @@ p {
   #pojisteni .top_magin_sekce {
     padding-top: 90px;
   }
+}
+
+#pojisteni .pin-spacer {
+  margin: 60px 0 0 0 !important;
 }
 
 .row_tab {
