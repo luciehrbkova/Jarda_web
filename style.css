@@ -17,6 +17,7 @@
 
 .grey {
   background: #D7DEE1;
+  background-size: 200%;
 }
 
 .blue {
@@ -584,7 +585,7 @@ p {
 }
 
 .services .square {
-  height: 110px;
+  height: 18vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,6 +595,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .services .square {
+    height: 110px;
+  }
 }
 
 .services .containerBack {
@@ -641,11 +648,17 @@ p {
 }
 
 .services .scene {
-  height: 110px;
+  height: 18%;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   width: 100%;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .services .scene {
+    height: 110px;
+  }
 }
 
 .services .card {
@@ -677,7 +690,7 @@ p {
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: 140%;
 }
 
 .services .card__face a {
@@ -691,7 +704,7 @@ p {
 
 @media screen and (min-width: 1800px) {
   .services .card__face {
-    background-size: 130%;
+    background-size: 180%;
   }
 }
 
@@ -1019,6 +1032,7 @@ p {
   font-weight: 800;
   letter-spacing: .52px;
   text-align: center;
+  margin: auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -1113,6 +1127,16 @@ p {
   padding: 12px;
 }
 
+.only_mob_reference .reference_paragraph {
+  height: 350px;
+}
+
+@media screen and (max-width: 320px) {
+  .only_mob_reference .reference_paragraph {
+    font-size: 0.825rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .only_mob_reference {
     display: none;
@@ -1158,6 +1182,9 @@ p {
   .only_tablet_reference #tab_ref_klient4 {
     display: none;
     width: 50%;
+  }
+  .only_tablet_reference .reference_paragraph {
+    height: 400px;
   }
 }
 
