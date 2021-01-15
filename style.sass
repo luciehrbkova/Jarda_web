@@ -339,6 +339,10 @@ p
 // *************** SERVICES *************
 .services
     height: 100vh
+    @media screen and ( min-width: 600px)
+        height: 60vh
+    @media screen and ( min-width: 1200px)
+        height: 100vh
     // margin-top: 100px
     .grid
         min-width: 100%
@@ -472,7 +476,7 @@ p
 // *************** ABOUT *************
 .about
     width: 100%
-    margin-top: 150px
+    // margin-top: 150px
     .main
         width: 83%
         padding-bottom: 100px
@@ -594,8 +598,9 @@ p
 // *************** REFERENCE *************
 .reference
     width: 100%
-    margin-bottom: 100px
+    // margin-bottom: 100px
     text-align: center
+    // background: pink
     .main
         width: 83%
     .reference_box
@@ -709,7 +714,7 @@ p
 // *************** CONTACT *************
 .contact
     width: 100%
-    margin-top: 100px
+    // margin-top: 100px
     .main
         width: 83%
         @media screen and ( min-width: 1200px )
@@ -891,6 +896,8 @@ p
     .button_move_left
         @media screen and ( min-width: 1200px )
             margin-left: calc( 50% - 160px )
+    .pin-spacer
+        margin: 60px 0 0 0!important
 .hypoteky
     .green_button
         margin-top: 30px
@@ -906,6 +913,8 @@ p
     .button_move_left
         @media screen and ( min-width: 1200px )
             margin-left: calc( 50% - 160px )
+    .pin-spacer
+        margin: 60px 0 0 0!important
 .third_container
     width: 100%
     @media screen and ( min-width: 1200px )
@@ -1019,6 +1028,8 @@ p
     .top_magin_sekce
         @media screen and ( min-width: 1200px )
             padding-top: 90px
+    .pin-spacer
+        margin: 60px 0 0 0!important
 .row_tab
     display: flex
     flex-direction: column
