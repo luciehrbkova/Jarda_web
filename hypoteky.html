@@ -173,13 +173,54 @@
                     </div>
                 </div>
                 <button class="green_button">CHCI OSOBNÍ PLÁN</button>
+
+
             </div>
+
             <div class="fringe">
                 <div class="menu_div">
                     <span onclick="openNav()"><img src="img/hmb_db.png" alt="" class="hmb_icon"></span>
                 </div>
             </div>
         </div>
+
+
+    </section>
+    <section class="contact" id="kalkulacka">
+        <div class="container">
+            <div class="fringe"><br><h2 class="pin4h">Splátkoměr</h2></div>
+            <div class="main">
+                <div class="zizkov pc_only aniSplatky"><img src="img/zizkov.jpg" alt="žižkovská věž"></div>
+                <div class="contact_container aniSplatky">
+                    <!-- <form > -->
+                        <div class="splatkomer">
+                            <h3>SPLÁTKOMĚR</h3><br>
+                            <p>HYPOTEČNÍ PŮJČKA</p>
+                            <p class="placeholder">Kč</p>
+                            <input type="number" id="castka" class="input">
+                            <p>ROČNÍ ÚROK</p>
+                            <p class="placeholder">%</p>
+                            <input type="number" id="urok" class="input">
+                            <p>DOBA SPLÁCENÍ</p>
+                            <p class="placeholder">let</p>
+                            <input type="number" id="doba" class="input">
+                            <button onclick="splatkomer()" class="cta submit" id="spocitej">SPOČÍTEJ</button>
+                            <div class="whole"></div>  
+                            
+                            <div class="result" id="result" >
+                                <p id="kolik"></p> <br>
+                                <h4 id="kolik6"></h4>
+                            </div>
+                        
+                        </div> 
+                    <!-- </form> -->
+                </div>
+                <div class="zizkov pc_hide"><img src="img/zizkov.jpg" alt="žižkovská věž"></div>
+            </div>
+            
+            <div class="fringe"></div>
+        </div>
+
     </section>
 
 
@@ -188,7 +229,7 @@
     <!--*********************** CONTACT *************************-->
     <section class="contact">
         <div class="container">
-            <div class="fringe"><br><h2 class="pin4h">Kontakt</h2></div>
+            <div class="fringe"><br><h2 class="pin5h">Kontakt</h2></div>
             <div class="main">
                 <div class="contact_container aniContact">
                     <form action="mailto:helena.kmochova@4fin.cz" method="post" enctype="text/plain"  name="EmailTestForm">
@@ -285,6 +326,18 @@
         // hypoteky
         gsap.registerPlugin(ScrollTrigger);
 
+        // splatkomer esase in
+        gsap.from('.aniSplatky', {
+            scrollTrigger: {
+                trigger:'.aniSplatky',
+                toggleActions: "play none none none",
+                start: "top 40%",
+            },
+            // duration: 1,
+            opacity: 0,
+            y: 50, 
+        });
+
         gsap.from('.aniHypo1', {
             // scrollTrigger: {
                 // trigger:'.aniHypo1',
@@ -346,10 +399,32 @@
             },
             opacity: 0,
         });
-        // ____________kontakt
         gsap.to('.pin4h', {
             scrollTrigger: {
                 trigger:'.pin4h',
+                pin: true,
+                start: "top 15%",
+                endTrigger: '.pin5h',
+                id: "pin3h",
+                end: "top 10%",
+                scrub: 1,
+            },
+        });
+        gsap.to('.pin4h', {
+            scrollTrigger: {
+                trigger:'.pin5h',
+                start: "top 35%",
+                end: "top 15%",
+                duration: 0.25,
+                scrub: true,
+            },
+            opacity: 0,
+        });
+      
+        // ____________kontakt
+        gsap.to('.pin4h', {
+            scrollTrigger: {
+                trigger:'.pin5h',
                 pin: true,
                 start: "top 15%",
                 end: "1000px 80%",
