@@ -595,6 +595,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .pc_hide {
+    display: none;
+  }
+}
+
 .mobile_only {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,6 +1407,20 @@ p {
   font-family: Barlow;
   font-size: 1rem;
   font-weight: 300;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0px !important;
+}
+
+.contact .contact_container input::-webkit-outer-spin-button, .contact .contact_container textarea::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 .contact .contact_container label {
@@ -1421,6 +1441,11 @@ p {
   border-radius: 7px;
   width: 200px;
   margin-left: calc( 50% - 100px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 .contact .contact_data {
@@ -2186,5 +2211,95 @@ p {
   .top_magin_gdpr {
     padding-top: 70px;
   }
+}
+
+#kalkulacka {
+  position: relative;
+  margin-top: -15px;
+}
+
+@media screen and (min-width: 600px) {
+  #kalkulacka {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #kalkulacka {
+    margin-top: -100px;
+  }
+}
+
+.zizkov {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .zizkov {
+    margin-top: 50px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .zizkov {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aniSplatky {
+    margin-bottom: 50px;
+  }
+}
+
+.splatkomer {
+  height: 490px;
+}
+
+@media screen and (min-width: 1200px) {
+  .splatkomer {
+    height: 350px;
+  }
+}
+
+.splatkomer .placeholder {
+  width: 15px;
+  text-align: left;
+  position: relative;
+  z-index: 3;
+  top: 25px;
+  left: 90%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.splatkomer input {
+  text-align: center;
+}
+
+.splatkomer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.splatkomer .whole {
+  width: 100%;
+  height: 10px;
+  background: #D7DEE1;
+  border: 0.5px solid #000000;
+  margin-top: 20px;
+}
+
+.splatkomer .result {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  z-index: 1;
+  top: -5px;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
