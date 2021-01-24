@@ -107,7 +107,11 @@
             </div>
             <div class="fringe">
                 <div class="menu_div blue">
-                    <span onclick="openNav()"><img src="img/hmb_icon.png" alt="ikona menu" class="hmb_icon"></span>
+                    <span onclick="openNav()">
+                        <img src="img/hmb_icon.png" alt="ikona menu" class="hmb_icon">
+                        <img src="img/menubig.png" alt="ikona menu" class="hmb_icon_largescreen">
+                    </span>
+                   
                 </div>
                 <div class="blue_fringe blue"></div>
                 <div class="down_fringe">
@@ -168,7 +172,7 @@
                             <div class="card" onclick="inv_quest()">
                                 <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_2">INVESTICE</h3>
-                                    <a href="hypoteky.html#hypo_invest" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
+                                    <a href="hypoteky.html#hypo_invest" onclick="document.getElementById('hypo_invest').scrollIntoView(true);return false;" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
                                     <a href="investice.html#advanced_invest" id="sq_question_2i"><p>Investice pro pokročilé</p></a>
                                     <a href="pojisteni.html#majetek" id="sq_question_2p"><p>Pojištění Majetku</p></a>
                                 </div>
@@ -612,7 +616,7 @@
                         <input type="text" id="jmeno" name="name" required><div class="required"></div>
                         <label for="cislo">Mobil</label><br>
                         <input type="number" id="cislo" name="mobil" required><div class="required"></div>
-                        <label for="eadresa">Email</label><br>
+                        <label for="adresa">Email</label><br>
                         <input type="email" id="adresa"  name="mail" required><div class="required"></div>
                         <label for="zprava">Text zprávy</label><br>
                         <textarea name="zprava" id="" rows="10"></textarea>
@@ -1002,9 +1006,9 @@
         var pcRef1, pcRef2, pcRef3
         function pcReference(pcRef1, pcRef2, pcRef3) 
         {
-            $(pcRef1).animate({width: '40%'}, 'slow');
-            $(pcRef3).animate({width: '30%'}, 'slow');
-            $(pcRef2).animate({width: '30%'}, 'slow');
+            $(pcRef1).animate({width: '40%', maxHeight: '486px'}, 'slow');
+            $(pcRef3).animate({width: '30%', maxHeight: '360px'}, 'slow');
+            $(pcRef2).animate({width: '30%', maxHeight: '360px'}, 'slow');
             // $(pR1).removeClass('rb_side').addClass('rb_main');
             // $(pR2).removeClass('rb_main').addClass('rb_side');
             // $(pR3).removeClass('rb_main').addClass('rb_side');
