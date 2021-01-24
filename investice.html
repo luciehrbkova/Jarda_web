@@ -167,7 +167,10 @@
             </div>
             <div class="fringe">
                 <div class="menu_div">
-                    <span onclick="openNav()"><img src="img/hmb_db.png" alt="" class="hmb_icon"></span>
+                    <span onclick="openNav()">
+                        <img src="img/hmb_icon.png" alt="ikona menu" class="hmb_icon">
+                        <img src="img/menubig.png" alt="ikona menu" class="hmb_icon_largescreen">
+                    </span>
                 </div>
             </div>
         </div>
@@ -187,7 +190,7 @@
                         <input type="text" id="jmeno" name="name" required><div class="required"></div>
                         <label for="cislo">Mobil</label><br>
                         <input type="number" id="cislo" name="mobil" required><div class="required"></div>
-                        <label for="eadresa">Email</label><br>
+                        <label for="adresa">Email</label><br>
                         <input type="email" id="adresa"  name="mail" required><div class="required"></div>
                         <label for="zprava">Text zprávy</label><br>
                         <textarea name="zprava" id="" rows="10"></textarea>
@@ -286,8 +289,9 @@
              scrollTrigger: {
                  trigger:'.aniHypo2',
                  toggleActions: "play none none none",
-                 start: "top center",
+                 start: "top 70%",
                  end: "center center",
+                //  markers: true,
              },
              opacity: 0,
              y: -70, 
@@ -298,7 +302,7 @@
              scrollTrigger: {
                  trigger:'.aniHypo3',
                  toggleActions: "play none none none",
-                 start: "top center",
+                 start:"top 70%",
                  end: "center center",
              },
              opacity: 0,

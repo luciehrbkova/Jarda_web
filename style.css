@@ -261,16 +261,53 @@ p {
   height: 25px;
 }
 
+@media screen and (min-width: 1900px) {
+  .home_icon {
+    position: absolute;
+    left: 35px;
+    top: 32.5px;
+  }
+}
+
 .hmb_icon {
   width: 23px;
   height: 15px;
   cursor: pointer;
 }
 
+@media screen and (min-width: 1900px) {
+  .hmb_icon {
+    display: none;
+  }
+}
+
+.hmb_icon_largescreen {
+  display: none;
+}
+
+@media screen and (min-width: 1900px) {
+  .hmb_icon_largescreen {
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 15px;
+    right: 35px;
+    top: 32.5px;
+  }
+}
+
 .cross_icon {
   width: 18px;
   height: 17px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1900px) {
+  .cross_icon {
+    position: absolute;
+    right: 35px;
+    top: 32.5px;
+  }
 }
 
 .sipka_icon {
@@ -1310,18 +1347,21 @@ p {
     display: -ms-flexbox;
     display: flex;
     width: 30%;
+    max-height: 360px;
   }
   .only_pc_reference #pc_ref_klient3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 40%;
+    max-height: 486px;
   }
   .only_pc_reference #pc_ref_klient4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 30%;
+    max-height: 360px;
   }
   .only_pc_reference #pc_ref_klient1 {
     display: -webkit-box;
@@ -1553,6 +1593,12 @@ p {
 .footer .container {
   width: 100%;
   background: #6598C7;
+}
+
+@media screen and (min-width: 1900px) {
+  .footer .container {
+    max-width: 100vw;
+  }
 }
 
 .footer .main {
@@ -2261,7 +2307,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .splatkomer {
-    height: 350px;
+    height: 300px;
   }
 }
 
