@@ -15,7 +15,6 @@
     <meta name="description" content="Jednodušší přístup k informacím a aktualitám o finančních produktech z pohodlí Vašeho domova."> 
     <title>JAROSLAV BEZOUŠKA - Hypotéky | Investice | Pojištění</title>
     <!-- ManyChat -->       
-    <script src="//widget.manychat.com/110920740663472.js" async="async"></script>
 
 </head>
 
@@ -713,8 +712,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
-        gsap.registerPlugin(ScrollTrigger);
         // heropage ani
+        gsap.registerPlugin();
         gsap.from(".logoani", {
             opacity: 0,
             y: 30,
@@ -734,7 +733,7 @@
             x: 30,
         })
         // services
-
+        gsap.registerPlugin(ScrollTrigger);
         gsap.from(".square", 1, {
             scrollTrigger:{
                 trigger: ".grid",
@@ -755,7 +754,7 @@
             from: "top"
             }
         });
-
+        gsap.registerPlugin(ScrollTrigger);
         // about
         gsap.from('.aniAbout', {
             scrollTrigger: {
