@@ -614,7 +614,7 @@
                         <label for="jmeno">Jméno</label><br>
                         <input type="text" id="jmeno" name="name" required><div class="required"></div>
                         <label for="cislo">Mobil</label><br>
-                        <input type="number" id="cislo" name="mobil" minlength="9" required><div class="required"></div>
+                        <input type="number" id="cislo" name="mobil"  required><div class="required"></div>
                         <label for="adresa">Email</label><br>
                         <input type="email" id="adresa"  name="mail" required><div class="required"></div>
                         <label for="zprava">S čím Vám mohu pomoci</label><br>
@@ -712,6 +712,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+        $(document).ready(function () {
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && isChrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    });
         // heropage ani
         gsap.registerPlugin();
         gsap.from(".logoani", {
