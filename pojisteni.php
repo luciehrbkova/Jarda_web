@@ -36,29 +36,29 @@
                             <div class="footer_line"></div>
                             <span class="footer_header">MENU</span>
                             <ul>
-                                <li onclick="closeNav()"><a href="index.html">Domů</a></li>
-                                <li onclick="closeNav()"><a href="index.html#services">Služby</a></li>
-                                <!-- <li onclick="closeNav()"><a href="index.html#news">Aktuality</a></li> -->
-                                <li onclick="closeNav()"><a href="index.html#about">O mně</a></li>
-                                <li onclick="closeNav()"><a href="index.html#reference">Reference</a></li>
-                                <li onclick="closeNav()"><a href="index.html#contact">Kontakt</a></li>
+                                <li onclick="closeNav()"><a href="index.php">Domů</a></li>
+                                <li onclick="closeNav()"><a href="index.php#services">Služby</a></li>
+                                <!-- <li onclick="closeNav()"><a href="index.php#news">Aktuality</a></li> -->
+                                <li onclick="closeNav()"><a href="index.php#about">O mně</a></li>
+                                <li onclick="closeNav()"><a href="index.php#reference">Reference</a></li>
+                                <li onclick="closeNav()"><a href="index.php#contact">Kontakt</a></li>
                             </ul>
                         </div>
                         <div class="footer_box list2">
                             <div class="footer_line"></div>
                             <span class="footer_header">SLUŽBY</span>
                             <ul>
-                                <li><a href="hypoteky.html">Hypotéky</a></li>
-                                <li><a href="investice.html">Investice</a></li>
-                                <li><a href="pojisteni.html">Pojištění</a></li>
+                                <li><a href="hypoteky.php">Hypotéky</a></li>
+                                <li><a href="investice.php">Investice</a></li>
+                                <li><a href="pojisteni.php">Pojištění</a></li>
                             </ul>
                         </div>
                         <div class="footer_box list3">
                             <div class="footer_line"></div>
                             <span class="footer_header"><br></span>
                             <ul>
-                                <li><a href="cookies.html">Cookies</a></li>
-                                <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                                <li><a href="cookies.php">Cookies</a></li>
+                                <li><a href="gdpr.php">Ochrana osobních údajů (GDPR)</a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
         <div class="container">
             <div class="fringe">
                 <div class="menu_div home_align margin_bottom">
-                    <a href="index.html"><img src="img/home_icon.png" alt="ikona domů" class="home_icon"></a>
+                    <a href="index.php"><img src="img/home_icon.png" alt="ikona domů" class="home_icon"></a>
                 </div>
                 <h2 class="pin3p">Pojištění</h2>
             </div>
@@ -237,29 +237,29 @@
                     <div class="footer_line"></div>
                     <span class="footer_header">MENU</span>
                     <ul>
-                        <li><a href="index.html">Domů</a></li>
-                        <li><a href="index.html#services">Služby</a></li>
-                        <!-- <li><a href="index.html#news">Aktuality</a></li> -->
-                        <li><a href="index.html#about">O mně</a></li>
-                        <li><a href="index.html#reference">Reference</a></li>
-                        <li><a href="index.html#contact">Kontakt</a></li>
+                        <li><a href="index.php">Domů</a></li>
+                        <li><a href="index.php#services">Služby</a></li>
+                        <!-- <li><a href="index.php#news">Aktuality</a></li> -->
+                        <li><a href="index.php#about">O mně</a></li>
+                        <li><a href="index.php#reference">Reference</a></li>
+                        <li><a href="index.php#contact">Kontakt</a></li>
                     </ul>
                 </div>
                 <div class="footer_box list2">
                     <div class="footer_line"></div>
                     <span class="footer_header">SLUŽBY</span>
                     <ul>
-                        <li><a href="hypoteky.html">Hypotéky</a></li>
-                        <li><a href="investice.html">Investice</a></li>
-                        <li><a href="pojisteni.html">Pojištění</a></li>
+                        <li><a href="hypoteky.php">Hypotéky</a></li>
+                        <li><a href="investice.php">Investice</a></li>
+                        <li><a href="pojisteni.php">Pojištění</a></li>
                     </ul>
                 </div>
                 <div class="footer_box list3">
                     <div class="footer_line"></div>
                     <span class="footer_header"><br></span>
                     <ul>
-                        <li><a href="cookies.html">Cookies</a></li>
-                        <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                        <li><a href="cookies.php">Cookies</a></li>
+                        <li><a href="gdpr.php">Ochrana osobních údajů (GDPR)</a></li>
                     </ul>
                 </div>
             </div>

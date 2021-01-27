@@ -24,7 +24,7 @@
 
 
 <body>
-<a href="index.html"><div id="diky">
+<a href="index.php"><div id="diky">
 
 </div></a>
 </body>

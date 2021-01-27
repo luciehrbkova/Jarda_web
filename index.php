@@ -33,29 +33,29 @@
                             <div class="footer_line"></div>
                             <span class="footer_header">MENU</span>
                             <ul>
-                                <li onclick="closeNav()"><a href="index.html">Domů</a></li>
-                                <li onclick="closeNav()"><a href="index.html#services">Služby</a></li>
-                                <!-- <li onclick="closeNav()"><a href="index.html#news">Aktuality</a></li> -->
-                                <li onclick="closeNav()"><a href="index.html#about">O mně</a></li>
-                                <li onclick="closeNav()"><a href="index.html#reference">Reference</a></li>
-                                <li onclick="closeNav()"><a href="index.html#contact">Kontakt</a></li>
+                                <li onclick="closeNav()"><a href="index.php">Domů</a></li>
+                                <li onclick="closeNav()"><a href="index.php#services">Služby</a></li>
+                                <!-- <li onclick="closeNav()"><a href="index.php#news">Aktuality</a></li> -->
+                                <li onclick="closeNav()"><a href="index.php#about">O mně</a></li>
+                                <li onclick="closeNav()"><a href="index.php#reference">Reference</a></li>
+                                <li onclick="closeNav()"><a href="index.php#contact">Kontakt</a></li>
                             </ul>
                         </div>
                         <div class="footer_box list2">
                             <div class="footer_line"></div>
                             <span class="footer_header">SLUŽBY</span>
                             <ul>
-                                <li><a href="hypoteky.html">Hypotéky</a></li>
-                                <li><a href="investice.html">Investice</a></li>
-                                <li><a href="pojisteni.html">Pojištění</a></li>
+                                <li><a href="hypoteky.php">Hypotéky</a></li>
+                                <li><a href="investice.php">Investice</a></li>
+                                <li><a href="pojisteni.php">Pojištění</a></li>
                             </ul>
                         </div>
                         <div class="footer_box list3">
                             <div class="footer_line"></div>
                             <span class="footer_header"><br></span>
                             <ul>
-                                <li><a href="cookies.html">Cookies</a></li>
-                                <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                                <li><a href="cookies.php">Cookies</a></li>
+                                <li><a href="gdpr.php">Ochrana osobních údajů (GDPR)</a></li>
                             </ul>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
         <div class="container">
             <div class="fringe">
                 <div class="menu_div home_align">
-                    <a href="index.html"><img src="img/home_icon.png" alt="ikona domů" class="home_icon"></a>
+                    <a href="index.php"><img src="img/home_icon.png" alt="ikona domů" class="home_icon"></a>
                 </div>
             </div>
             <div class="main">
@@ -84,12 +84,12 @@
                     <div class="navigation_box"></div>
                     <!-- aktuality -->
                     <div class="navigation_box logoani"><span class="nav_header color_db"></div> 
-                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="hypoteky.html" class="nav_link">HYPOTÉKY</a></span></div>
-                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="investice.html" class="nav_link">INVESTICE</a></span></div>
-                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="pojisteni.html" class="nav_link">POJIŠTĚNÍ</a></span></div>
-                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="index.html#about" class="nav_link">O MNĚ</a></span></div>
-                    <div class="navigation_box logoani"><span class="nav_header color_w"><a href="index.html#reference" class="nav_link_white">REFERENCE</a></span></div>
-                    <div class="navigation_box logoani"><span class="nav_header color_w"><a href="index.html#contact" class="nav_link_white">KONTAKT</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="hypoteky.php" class="nav_link">HYPOTÉKY</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="investice.php" class="nav_link">INVESTICE</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="pojisteni.php" class="nav_link">POJIŠTĚNÍ</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_db"><a href="index.php#about" class="nav_link">O MNĚ</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_w"><a href="index.php#reference" class="nav_link_white">REFERENCE</a></span></div>
+                    <div class="navigation_box logoani"><span class="nav_header color_w"><a href="index.php#contact" class="nav_link_white">KONTAKT</a></span></div>
                 </div>
                 <div class="hero_img_box heroani2">
                     <img src="img/hero_mob.jpg" alt="Jaroslav Bezouška" class="hero_img">
@@ -171,9 +171,9 @@
                             <div class="card" onclick="inv_quest()">
                                 <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_2">INVESTICE</h3>
-                                    <a href="hypoteky.html#hypo_invest" onclick="document.getElementById('hypo_invest').scrollIntoView(true);return false;" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
-                                    <a href="investice.html#advanced_invest" id="sq_question_2i"><p>Investice pro pokročilé</p></a>
-                                    <a href="pojisteni.html#majetek" id="sq_question_2p"><p>Pojištění Majetku</p></a>
+                                    <a href="hypoteky.php#hypo_invest" onclick="document.getElementById('hypo_invest').scrollIntoView(true);return false;" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
+                                    <a href="investice.php#advanced_invest" id="sq_question_2i"><p>Investice pro pokročilé</p></a>
+                                    <a href="pojisteni.php#majetek" id="sq_question_2p"><p>Pojištění Majetku</p></a>
                                 </div>
                                 <!-- <div class="card__face card__face--back"><p>Jak nejvýhodněji financovat nákup  investiční nemovitosti?</p></div> -->
 
@@ -209,9 +209,9 @@
                             <div class="card" id="hypo_card" onclick="hypo_quest()">
                                 <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_1" >HYPOTÉKY</h3>
-                                    <a href="hypoteky.html" id="sq_question_1h"><p>Jak získat svoji první hypotéku?</p></a>
-                                    <a href="investice.html#zacit_investovat" id="sq_question_1i"><p>Začínám investovat</p></a>
-                                    <a href="pojisteni.html" id="sq_question_1p"><p>Životní Pojištění</p></a>
+                                    <a href="hypoteky.php" id="sq_question_1h"><p>Jak získat svoji první hypotéku?</p></a>
+                                    <a href="investice.php#zacit_investovat" id="sq_question_1i"><p>Začínám investovat</p></a>
+                                    <a href="pojisteni.php" id="sq_question_1p"><p>Životní Pojištění</p></a>
                                 </div>
                             </div>
                         </div>
@@ -227,9 +227,9 @@
                             <div class="card" onclick="poj_quest()">
                                 <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_3">POJIŠTĚNÍ</h3>
-                                    <a href="hypoteky.html#hypo_zlevnit" id="sq_question_3h"><p>Jak zlevnit nebo předčasně splatit stávající hypotéku?</p></a>
-                                    <a href="investice.html#middle_invest" id="sq_question_3i"><p>Jsou mé investice správně nastaveny?</p></a>
-                                    <a href="pojisteni.html#auto" id="sq_question_3p"><p>Pojištění Auta</p></a>
+                                    <a href="hypoteky.php#hypo_zlevnit" id="sq_question_3h"><p>Jak zlevnit nebo předčasně splatit stávající hypotéku?</p></a>
+                                    <a href="investice.php#middle_invest" id="sq_question_3i"><p>Jsou mé investice správně nastaveny?</p></a>
+                                    <a href="pojisteni.php#auto" id="sq_question_3p"><p>Pojištění Auta</p></a>
                                 </div>
                             </div>
                         </div>
@@ -674,29 +674,29 @@
                         <div class="footer_line"></div>
                         <span class="footer_header">MENU</span>
                         <ul>
-                            <li><a href="index.html">Domů</a></li>
-                            <li><a href="index.html#services">Služby</a></li>
-                            <!-- <li><a href="index.html#news">Aktuality</a></li> -->
-                            <li><a href="index.html#about">O mně</a></li>
-                            <li><a href="index.html#reference">Reference</a></li>
-                            <li><a href="index.html#contact">Kontakt</a></li>
+                            <li><a href="index.php">Domů</a></li>
+                            <li><a href="index.php#services">Služby</a></li>
+                            <!-- <li><a href="index.php#news">Aktuality</a></li> -->
+                            <li><a href="index.php#about">O mně</a></li>
+                            <li><a href="index.php#reference">Reference</a></li>
+                            <li><a href="index.php#contact">Kontakt</a></li>
                         </ul>
                     </div>
                     <div class="footer_box list2">
                         <div class="footer_line"></div>
                         <span class="footer_header">SLUŽBY</span>
                         <ul>
-                            <li><a href="hypoteky.html">Hypotéky</a></li>
-                            <li><a href="investice.html">Investice</a></li>
-                            <li><a href="pojisteni.html">Pojištění</a></li>
+                            <li><a href="hypoteky.php">Hypotéky</a></li>
+                            <li><a href="investice.php">Investice</a></li>
+                            <li><a href="pojisteni.php">Pojištění</a></li>
                         </ul>
                     </div>
                     <div class="footer_box list3">
                         <div class="footer_line"></div>
                         <span class="footer_header"><br></span>
                         <ul>
-                            <li><a href="cookies.html">Cookies</a></li>
-                            <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                            <li><a href="cookies.php">Cookies</a></li>
+                            <li><a href="gdpr.php">Ochrana osobních údajů (GDPR)</a></li>
                         </ul>
                     </div>
                 </div>
