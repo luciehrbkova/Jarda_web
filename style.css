@@ -1483,6 +1483,7 @@ p {
   color: #ffffff;
   background: #89B700;
   border: 0px;
+  border-radius: 7px;
   padding: 0.9rem 0;
   font-weight: 600;
   font-size: 1.125rem;

@@ -33,7 +33,7 @@
             $email=$_REQUEST['email'];
             $message=$_REQUEST['zprava'];
             $br=PHP_EOL;
-            $messageToMail="Jméno klienta: ".$name.PHP_EOL."Mobilní telefon: ".$mobil.PHP_EOL."zpráva od klienta: ".PHP_EOL.$message." ";
+            $messageToMail="Jméno klienta: ".$name.PHP_EOL."Mobilní telefon: ".$mobil.PHP_EOL."Email: ".$email.PHP_EOL."zpráva od klienta: ".PHP_EOL.$message." ";
             
 
             if (($name=="")||($mobil=="")||($email=="")||($message==""))
