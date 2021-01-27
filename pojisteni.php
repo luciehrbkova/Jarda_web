@@ -171,7 +171,7 @@
 
 
     <!--*********************** CONTACT *************************-->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="fringe"><br><h2 class="pin4p">Kontakt</h2></div>
             <div class="main">
