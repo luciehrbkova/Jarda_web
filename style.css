@@ -1464,6 +1464,14 @@ p {
   appearance: none;
 }
 
+.contact .contact_container input::-webkit-inner-spin-button, .contact .contact_container textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
 .contact .contact_container label {
   font-size: 0.75rem;
   font-weight: 500;
@@ -2348,5 +2356,26 @@ p {
   z-index: 1;
   top: -5px;
   display: none;
+}
+
+#diky {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/dik_m.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+  #diky {
+    background-image: url("img/dik_t.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #diky {
+    background-image: url("img/dik_p.jpg");
+  }
 }
 /*# sourceMappingURL=style.css.map */
