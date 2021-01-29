@@ -37,8 +37,15 @@
     <img height="1" width="1" style="display:none" 
         src="https://www.facebook.com/tr?id={114857517128437}&ev=PageView&noscript=1"/>
     </noscript>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9W18B8M0J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    <!-- End Facebook Pixel Code -->  
+        gtag('config', 'G-C9W18B8M0J');
+    </script>
 
 
 </head>
