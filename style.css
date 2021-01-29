@@ -1700,6 +1700,26 @@ p {
   text-decoration: underline;
 }
 
+.madeby {
+  padding-bottom: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.madeby p {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.madeby a:hover {
+  color: #003152;
+  text-decoration: underline;
+}
+
 .list3 {
   width: 100%;
 }

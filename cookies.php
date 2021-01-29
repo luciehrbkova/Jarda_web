@@ -148,6 +148,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="madeby">
+                    <p>
+                    Created by <a href="https://lucieweb.dev/">Lucie</a> & <a href="https://www.behance.net/martinnovotny93">Martin</a></p>
+                </div>
         </div>
         <div class="fringe"></div>
     </div>
