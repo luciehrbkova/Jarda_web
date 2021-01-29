@@ -33,7 +33,15 @@
         <img height="1" width="1" style="display:none" 
             src="https://www.facebook.com/tr?id={114857517128437}&ev=PageView&noscript=1"/>
     </noscript>
-    <!-- End Facebook Pixel Code -->     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9W18B8M0J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C9W18B8M0J');
+    </script>
 
 </head>
 
@@ -721,7 +729,7 @@
                 </div>
                 <div class="madeby">
                     <p>
-                    Created by <a href="https://lucieweb.dev/">Lucie</a> & <a href="https://www.behance.net/martinnovotny93">Martin</a></p>
+                    2021 Created by <a href="https://lucieweb.dev/">Lucie</a> & <a href="https://www.behance.net/martinnovotny93">Martin</a></p>
                 </div>
             </div>
             <div class="fringe"></div>
