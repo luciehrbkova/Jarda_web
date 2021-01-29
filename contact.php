@@ -44,7 +44,7 @@
             {		
                 $from="From: $name<$email>\r\nReturn-path: $email";
                 $subject="Zpráva z webu Jaroslav.bezouska.cz ";
-                mail("hrbkova.lucka@gmail.com", $subject, $messageToMail, $from);
+                mail("jaroslav.bezouska@4fin.cz", $subject, $messageToMail, $from);
                 echo "<h3 class=\"emailMessage\" id=\"finalMessage\">Děkuji za Vaší zprávu!<br>Brzy se Vám ozvu.<br><br>Jaroslav Bezouška</h3>";
             }
         }  
