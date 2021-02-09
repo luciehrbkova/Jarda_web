@@ -302,6 +302,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script>
+        // fix scrolling from services
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+        if (target.length) {
+            $('html,body').animate({
+            scrollTop: target.offset().top -80
+                }, 1000);
+                    return false;}}
+        });
+        });
         // probem with scrolling to links solution
         $(document).ready(function () {
         var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
