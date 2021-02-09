@@ -26,12 +26,12 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '{114857517128437}');
+        fbq('init', '114857517128437');
         fbq('track', 'PageView');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none" 
-            src="https://www.facebook.com/tr?id={114857517128437}&ev=PageView&noscript=1"/>
+            src="https://www.facebook.com/tr?id=114857517128437&ev=PageView&noscript=1"/>
     </noscript>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9W18B8M0J"></script>
@@ -125,7 +125,7 @@
                 <div class="hero_title_cont heroani">
                     <span class="hero_name">JAROSLAV</span>
                     <span class="hero_name surname">BEZOUŠKA</span>
-                    <span class="podtitul">Oblastní Manager</span>
+                    <span class="podtitul">Oblastní Ředitel</span>
                     <a href="#contact"><button class="green_button">NAPIŠTE MI</button></a>
 
                 </div>
@@ -198,7 +198,7 @@
                             <div class="card" onclick="inv_quest()">
                                 <div class="card__face card__face--front theme">
                                     <h3 id="sq_header_2">INVESTICE</h3>
-                                    <a href="hypoteky.php#hypo_invest" onclick="document.getElementById('hypo_invest').scrollIntoView(true);return false;" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
+                                    <a href="hypoteky.php#hypo_invest" id="sq_question_2h"><p>Jak co nejvýhodněji pořídit investiční nemovitost?</p></a>
                                     <a href="investice.php#advanced_invest" id="sq_question_2i"><p>Investice pro pokročilé</p></a>
                                     <a href="pojisteni.php#majetek" id="sq_question_2p"><p>Pojištění Majetku</p></a>
                                 </div>
@@ -306,7 +306,7 @@
                                  facebooku a webu.</p>
                         </div>
                         <div class="about__text_one">
-                        <p class="about__paragraph">Jsem finanční a investiční poradce a v oboru pracuji 6 let. 
+                        <p class="about__paragraph">Jsem finanční a investiční poradce a v oboru pracuji od roku 2015. 
                             Největším tématem jsou pro mě  investice, protože mi záleží na tom, 
                             aby majetek mých klientů v čase kontrolovaně rostl. 
                             Díky práci s rezervami a využívání ostatních finančních produktů s 
@@ -751,6 +751,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script>
+        // fix scrolling from services
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+                if (target.length) {
+                    $('html,body').animate({
+                    scrollTop: target.offset().top -80
+                        }, 1000);
+                            return false;}}
+        });
+        });
+
         $(document).ready(function () {
         var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
         if (window.location.hash && isChrome) {
