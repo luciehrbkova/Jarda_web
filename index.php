@@ -16,6 +16,8 @@
     <title>JAROSLAV BEZOUŠKA - Hypotéky | Investice | Pojištění</title>
     <!-- ManyChat -->
     <script src="//widget.manychat.com/110920740663472.js" async="async"></script> 
+    <!-- Overeni domeny pro facebook -->
+    <meta name="facebook-domain-verification" content="z4oeodoqeo7m7zw2fwtliyzh2alrff" />
     <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
