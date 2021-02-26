@@ -178,7 +178,7 @@
                     <div class="poj_text part2c">Při porovnání všech “autopojištění” na trhu doporučuji sledovat nejen nízkou cenu ale i například limity povinného ručení, funkci a možnosti připojištění jako je pojištění skel a asistentce. Nejnižší cena by neměla být vždy jediný ukazatel dobrého pojištění.
                     </div>
                     <div class="button_box">
-                        <a href="#contact"><button class="green_button button_move_l button_move_down">SROVNÁNÍ CENY</button></a>
+                        <a href="https://m.me/110920740663472?ref=w14645717"><button class="green_button button_move_l button_move_down">SROVNÁNÍ CENY</button></a>
                     </div>
                 </div>
             </div>
