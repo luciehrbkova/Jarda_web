@@ -141,7 +141,7 @@
 
                     </div>
                 </div>
-                <a href="#contact"><button class="green_button">CHCI KONZULTACI</button></a>
+                <a href="https://m.me/110920740663472?ref=w14645700"><button class="green_button">CHCI KONZULTACI</button></a>
                 <!-- MIDDLE HYPO -->
                 <a class="target" id="hypo_zlevnit" name="hypo_zlevnit"></a>
                 <span class="question_header_pc little_margin"><h4>Jak zlevnit nebo předčasně splatit stávající hypotéku?</h4></span>
@@ -198,7 +198,7 @@
 
                     </div>
                 </div>
-                <a href="#contact"><button class="green_button">OSOBNÍ PLÁN</button></a>
+                <a href="https://m.me/110920740663472?ref=w14645700"><button class="green_button">OSOBNÍ PLÁN</button></a>
 
 
             </div>
